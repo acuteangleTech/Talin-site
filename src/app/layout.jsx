@@ -9,7 +9,7 @@ export const viewport = {
 };
 
 export const metadata = {
-  title: 'Next.js with Tailwind CSS',
+  title: 'Talinglobal Group',
   description: 'A boilerplate project with Next.js 15 and Tailwind CSS 3.4.17',
   icons: {
     icon: [

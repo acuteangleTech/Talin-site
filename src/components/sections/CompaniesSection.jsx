@@ -1,33 +1,48 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const CompaniesSection = () => {
+  const router = useRouter();
+  
   const companies = [
     {
       name: "Talin International",
       image: "/images/img_f48408c8_d809_4e45_8_jpg_webp.png",
-      icon: "/images/img_component_2_black_900_02.svg"
+      icon: "/images/img_component_2_black_900_02.svg",
+      route: "/talin-international",
+      description: "Industrial manufacturing and infrastructure development"
     },
     {
       name: "Utopia Global General Trading",
       image: "/images/img_f48408c8_d809_4e45_8_jpg_webp_150x104.png",
-      icon: "/images/img_component_2_black_900_02.svg"
+      icon: "/images/img_component_2_black_900_02.svg",
+      route: "/utopia-global",
+      description: "International trade and commodity supply"
     },
     {
       name: "Hollywood Cosmetics",
       image: "/images/img_f48408c8_d809_4e45_8_jpg_webp_1.png",
-      icon: "/images/img_component_2_blue_gray_900.svg"
+      icon: "/images/img_component_2_blue_gray_900.svg",
+      route: "/hollywood-cosmetics",
+      description: "Beauty and personal care products"
     },
     {
       name: "Talin Properties",
       image: "/images/img_f48408c8_d809_4e45_8_jpg_webp_2.png",
-      icon: "/images/img_component_2_blue_gray_900.svg"
+      icon: "/images/img_component_2_blue_gray_900.svg",
+      route: "/talin-properties",
+      description: "Real estate development and management"
     }
   ];
 
+  const handleCompanyClick = (route) => {
+    router.push(route);
+  };
+
   return (
-    <section className="w-full bg-global-6 py-12 sm:py-14 md:py-16 lg:py-[14px]">
+    <section id="companies" className="w-full bg-global-6 py-12 sm:py-14 md:py-16 lg:py-[14px]">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-12 sm:gap-14 md:gap-16 lg:gap-[72px] justify-start items-center w-full">
           {/* Companies Header */}
@@ -42,11 +57,20 @@ const CompaniesSection = () => {
           {/* Companies Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7 md:gap-8 lg:gap-[32px] w-full lg:w-[86%]">
             {companies.map((company, index) => (
-              <div key={index} className="flex flex-row justify-start items-center w-full bg-global-7 border border-gray-200 rounded-sm p-2 sm:p-3 md:p-4 lg:p-[12px]">
+              <div 
+                key={index} 
+                className="flex flex-row justify-start items-center w-full bg-global-7 border border-gray-200 rounded-sm p-2 sm:p-3 md:p-4 lg:p-[12px] cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-global-2"
+                onClick={() => handleCompanyClick(company.route)}
+              >
                 <div className="flex flex-col gap-16 sm:gap-18 md:gap-20 lg:gap-[106px] justify-start items-start w-full">
-                  <h3 className="text-[16px] sm:text-[17px] md:text-[18px] lg:text-[18px] font-manrope font-normal leading-[22px] sm:leading-[23px] md:leading-[24px] lg:leading-[25px] text-left text-global-1 mb-2 sm:mb-3 md:mb-4 lg:mb-[12px]">
-                    {company.name}
-                  </h3>
+                  <div>
+                    <h3 className="text-[16px] sm:text-[17px] md:text-[18px] lg:text-[18px] font-manrope font-semibold leading-[22px] sm:leading-[23px] md:leading-[24px] lg:leading-[25px] text-left text-global-1 mb-2 sm:mb-3 md:mb-4 lg:mb-[12px] hover:text-global-2 transition-colors duration-300">
+                      {company.name}
+                    </h3>
+                    <p className="text-[12px] sm:text-[13px] md:text-[14px] lg:text-[14px] font-manrope font-normal leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] text-left text-global-2">
+                      {company.description}
+                    </p>
+                  </div>
                   <Image 
                     src={company.icon} 
                     alt={`${company.name} Icon`}

@@ -2,6 +2,10 @@
 const nextConfig = {
   productionBrowserSourceMaps: true,
   distDir: process.env.DIST_DIR || '.next',
+  images: {
+    unoptimized: true,
+    domains: ['localhost'],
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.(jsx|tsx)$/,

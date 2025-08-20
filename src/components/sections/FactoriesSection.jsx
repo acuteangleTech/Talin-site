@@ -44,7 +44,7 @@ const FactoriesSection = () => {
   ];
 
   return (
-    <section className="w-full bg-global-6 py-12 sm:py-14 md:py-16 lg:py-[70px] px-8 sm:px-10 md:px-12 lg:px-[56px]">
+    <section id="factories" className="w-full bg-global-6 py-12 sm:py-14 md:py-16 lg:py-[70px] px-8 sm:px-10 md:px-12 lg:px-[56px]">
       <div className="w-full max-w-[1440px] mx-auto">
         <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-[36px] justify-start items-center w-full">
           {/* Factories Header */}

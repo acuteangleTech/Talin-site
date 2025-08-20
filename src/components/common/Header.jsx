@@ -6,6 +6,18 @@ import Image from 'next/image';
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    // Close mobile menu if open
+    setMenuOpen(false);
+  };
+
   return (
     <header className="absolute top-0 left-0 w-full bg-black/20 backdrop-blur-md z-10 p-3 sm:p-4 md:p-6 lg:p-[12px]">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -35,18 +47,30 @@ const Header = () => {
               <Link href="/" className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-6 hover:text-global-4 transition-colors duration-200">
                 Home
               </Link>
-              <Link href="/about" className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200">
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
+              >
                 About
-              </Link>
-              <Link href="/companies" className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200">
+              </button>
+              <button 
+                onClick={() => scrollToSection('companies')}
+                className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
+              >
                 Companies
-              </Link>
-              <Link href="/factories" className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200">
+              </button>
+              <button 
+                onClick={() => scrollToSection('factories')}
+                className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
+              >
                 Factories
-              </Link>
-              <Link href="/gallery" className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200">
+              </button>
+              <button 
+                onClick={() => scrollToSection('gallery')}
+                className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
+              >
                 Gallery
-              </Link>
+              </button>
             </nav>
           </div>
 
@@ -54,11 +78,17 @@ const Header = () => {
           <button 
             className="lg:hidden p-2 text-global-6 hover:text-global-4 transition-colors duration-200"
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+            {menuOpen ? (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            )}
           </button>
 
           {/* Get in Touch Button - Desktop */}
@@ -73,26 +103,39 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation Menu */}
-        <nav className={`${menuOpen ? 'block' : 'hidden'} lg:hidden mt-4 pt-4 border-t border-[#ffffff26]`}>
-          <div className="flex flex-col gap-4 px-4">
-            <Link href="/" className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-6 hover:text-global-4 transition-colors duration-200 py-2">
+        <nav className={`${menuOpen ? 'block' : 'hidden'} lg:hidden bg-global-1 rounded-lg shadow-lg`}>
+          {/* Mobile Menu Items */}
+          <div className="flex flex-col gap-0">
+            <Link href="/" className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-6 hover:text-global-4 transition-colors duration-200 py-3 px-4 hover:bg-global-8">
               Home
             </Link>
-            <Link href="/about" className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-2">
+            <button 
+              onClick={() => scrollToSection('about')}
+              className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
+            >
               About
-            </Link>
-            <Link href="/companies" className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-2">
+            </button>
+            <button 
+              onClick={() => scrollToSection('companies')}
+              className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
+            >
               Companies
-            </Link>
-            <Link href="/factories" className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-2">
+            </button>
+            <button 
+              onClick={() => scrollToSection('factories')}
+              className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
+            >
               Factories
-            </Link>
-            <Link href="/gallery" className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-2">
+            </button>
+            <button 
+              onClick={() => scrollToSection('gallery')}
+              className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
+            >
               Gallery
-            </Link>
+            </button>
             <Link 
               href="/contact" 
-              className="mt-2 flex justify-center items-center w-full border-2 border-[#ffffff26] bg-global-2 px-4 py-3 hover:bg-opacity-90 transition-all duration-200"
+              className="mx-4 mb-3 flex justify-center items-center w-auto border-2 border-[#ffffff26] bg-global-2 px-4 py-3 hover:bg-opacity-90 transition-all duration-200 rounded-md"
             >
               <span className="text-[16px] font-dm-sans font-medium leading-[21px] text-left text-global-6">
                 Get in touch

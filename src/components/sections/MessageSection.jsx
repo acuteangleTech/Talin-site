@@ -14,10 +14,7 @@ const MessageSection = () => {
             </h2>
             <div className="flex flex-col justify-center items-center w-full">
               <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[20px] font-manrope font-normal leading-[24px] sm:leading-[26px] md:leading-[28px] lg:leading-[28px] text-center text-global-3">
-                Real stories from businesses we've partnered with to create
-              </p>
-              <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[20px] font-manrope font-normal leading-[24px] sm:leading-[26px] md:leading-[28px] lg:leading-[28px] text-center text-global-3">
-                lasting success.
+                Real stories from businesses we've partnered with to create lasting success.
               </p>
             </div>
           </div>
@@ -39,7 +36,7 @@ const MessageSection = () => {
                   height={50}
                   className="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[48px] md:h-[48px] lg:w-[50px] lg:h-[50px]"
                 />
-                <h3 className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[18px] font-ysabeau font-bold leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[24px] text-left uppercase text-global-4 w-full sm:w-3/4 md:w-2/3 lg:w-[18%] ml-1 sm:ml-2 md:ml-3 lg:ml-[6px]">
+                <h3 className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[18px] font-ysabeau font-bold leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[24px] text-left uppercase  w-full sm:w-3/4 md:w-2/3 lg:w-[30%] ml-1 sm:ml-2 md:ml-3 lg:ml-[6px]">
                   Talin Global Group
                 </h3>
               </div>

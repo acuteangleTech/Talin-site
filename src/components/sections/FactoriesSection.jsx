@@ -98,10 +98,10 @@ const FactoriesSection = () => {
                         <Button 
                           variant="secondary"
                           size="xs"
-                          className="bg-button-1 text-global-2 rounded-[14px] px-2 py-1 mt-3"
+                          className="w-auto"
                           onClick={() => {}}
                         >
-                          <span className="text-[12px] font-manrope font-normal leading-[16px] text-left text-global-2">
+                          <span className="text-[12px] font-manrope font-normal leading-[16px] text-left">
                             {factory.year}
                           </span>
                         </Button>
@@ -138,10 +138,10 @@ const FactoriesSection = () => {
                       <Button 
                         variant="secondary"
                         size="xs"
-                        className="bg-button-1 text-global-2 rounded-[14px] px-2 py-1 sm:px-2.5 sm:py-1.5 md:px-3 md:py-2 lg:px-[6px] lg:py-[6px] mt-2 sm:mt-3 md:mt-4 lg:mt-[12px]"
+                        className="w-auto"
                         onClick={() => {}}
                       >
-                        <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-manrope font-normal leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] text-left text-global-2">
+                        <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-manrope font-normal leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] text-left">
                           {factories[0].year}
                         </span>
                       </Button>
@@ -171,10 +171,10 @@ const FactoriesSection = () => {
                       <Button 
                         variant="secondary"
                         size="xs"
-                        className="bg-button-1 text-global-2 rounded-[14px] px-2 py-1 sm:px-2.5 sm:py-1.5 md:px-3 md:py-2 lg:px-[6px] lg:py-[6px] mt-2 sm:mt-3 md:mt-4 lg:mt-[12px]"
+                        className="w-auto"
                         onClick={() => {}}
                       >
-                        <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-manrope font-normal leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] text-left text-global-2">
+                        <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-manrope font-normal leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] text-left">
                           {factories[2].year}
                         </span>
                       </Button>
@@ -207,10 +207,10 @@ const FactoriesSection = () => {
                       <Button 
                         variant="secondary"
                         size="xs"
-                        className="bg-button-1 text-global-2 rounded-[14px] px-2 py-1 sm:px-2.5 sm:py-1.5 md:px-3 md:py-2 lg:px-[6px] lg:py-[6px] mt-4 sm:mt-5 md:mt-6 lg:mt-[24px] -ml-1 sm:-ml-1.5 md:-ml-2 lg:-ml-[4px]"
+                        className="w-auto"
                         onClick={() => {}}
                       >
-                        <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-inter font-normal leading-[14px] sm:leading-[15px] md:leading-[16px] lg:leading-[16px] text-left text-global-2">
+                        <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-inter font-normal leading-[14px] sm:leading-[15px] md:leading-[16px] lg:leading-[16px] text-left">
                           {factories[1].year}
                         </span>
                       </Button>
@@ -240,10 +240,10 @@ const FactoriesSection = () => {
                       <Button 
                         variant="secondary"
                         size="xs"
-                        className="bg-button-1 text-global-2 rounded-[14px] px-2 py-1 sm:px-2.5 sm:py-1.5 md:px-3 md:py-2 lg:px-[6px] lg:py-[6px] mt-2 sm:mt-3 md:mt-4 lg:mt-[12px]"
+                        className="w-auto"
                         onClick={() => {}}
                       >
-                        <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-manrope font-normal leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] text-left text-global-2">
+                        <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-manrope font-normal leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] text-left">
                           {factories[3].year}
                         </span>
                       </Button>
@@ -277,10 +277,10 @@ const FactoriesSection = () => {
                     <Button 
                       variant="secondary"
                       size="xs"
-                      className="bg-button-1 text-global-2 rounded-[14px] px-2 py-1 sm:px-2.5 sm:py-1.5 md:px-3 md:py-2 lg:px-[6px] lg:py-[6px] mt-2 sm:mt-3 md:mt-4 lg:mt-[12px]"
+                      className="w-auto"
                       onClick={() => {}}
                     >
-                      <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-manrope font-normal leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] text-left text-global-2">
+                      <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-manrope font-normal leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] text-left">
                         {factories[4].year}
                       </span>
                     </Button>

@@ -67,23 +67,46 @@ const ContactPage = () => {
               </h1>
               {/* Contact Details */}
               <div className="flex flex-col gap-[12px] sm:gap-[16px] md:gap-[18px] lg:gap-[20px] justify-start items-start w-full">
-                {/* Office Section */}
+                {/* Sudan Office Section */}
                 <div className="flex flex-col gap-[3px] sm:gap-[4px] md:gap-[5px] lg:gap-[6px] justify-start items-start w-full">
                   <h3 className="text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[21px] md:leading-[21px] lg:leading-[22px] text-left bg-[linear-gradient(90deg,#ffffff_0%,_#ffffff4c_100%)] bg-clip-text text-transparent">
-                    Office:
+                    Sudan Office:
                   </h3>
                   <div className="flex flex-col justify-center items-start w-full">
                     <p className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[14px] font-inter font-normal leading-[18px] sm:leading-[19px] md:leading-[20px] lg:leading-[21px] text-left text-global-6">
-                      Keizersgracht 520, 1017EK<br />
-                      Amsterdam<br />
-                      The Netherlands
+                      Villa no. 6, Taif st.<br />
+                      Khartoum<br />
+                      Sudan
                     </p>
                     <div className="flex flex-row justify-start items-center w-full mt-2">
                       <span className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[14px] font-inter font-normal leading-[16px] sm:leading-[17px] md:leading-[17px] lg:leading-[18px] text-left text-global-6">
-                        Local time:
+                        Phone:
                       </span>
                       <span className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[14px] font-inter font-normal leading-[16px] sm:leading-[17px] md:leading-[17px] lg:leading-[18px] text-left text-global-6 ml-1">
-                        {localTime || '21:35:46'}
+                        +249912308175
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                {/* Divider Line */}
+                <div className="w-full h-[1px] bg-global-8 my-[4px] sm:my-[6px] md:my-[7px] lg:my-[8px]"></div>
+                {/* Egypt Office Section */}
+                <div className="flex flex-col gap-[3px] sm:gap-[4px] md:gap-[5px] lg:gap-[6px] justify-start items-start w-full">
+                  <h3 className="text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[21px] md:leading-[21px] lg:leading-[22px] text-left bg-[linear-gradient(90deg,#ffffff_0%,_#ffffff4c_100%)] bg-clip-text text-transparent">
+                    Egypt Office:
+                  </h3>
+                  <div className="flex flex-col justify-center items-start w-full">
+                    <p className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[14px] font-inter font-normal leading-[18px] sm:leading-[19px] md:leading-[20px] lg:leading-[21px] text-left text-global-6">
+                      Building 2 Area 8<br />
+                      El Shorouk city<br />
+                      Cairo, Egypt
+                    </p>
+                    <div className="flex flex-row justify-start items-center w-full mt-2">
+                      <span className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[14px] font-inter font-normal leading-[16px] sm:leading-[17px] md:leading-[17px] lg:leading-[18px] text-left text-global-6">
+                        Phone:
+                      </span>
+                      <span className="text-[12px] sm:text-[13px] md:text-[13px] lg:text-[14px] font-inter font-normal leading-[16px] sm:leading-[17px] md:leading-[17px] lg:leading-[18px] text-left text-global-6 ml-1">
+                        +20 155 5067624
                       </span>
                     </div>
                   </div>
@@ -97,33 +120,7 @@ const ContactPage = () => {
                   </h3>
                   <div className="flex flex-row justify-start items-center w-full">
                     <span className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-manrope font-extralight leading-[25px] sm:leading-[28px] md:leading-[31px] lg:leading-[33px] text-left bg-[linear-gradient(90deg,#ffffff_0%,_#ffffff4c_100%)] bg-clip-text text-transparent">
-                      utobia07@yahoo.com
-                    </span>
-                  </div>
-                </div>
-                {/* Divider Line */}
-                <div className="w-full h-[1px] bg-global-8 my-[4px] sm:my-[6px] md:my-[7px] lg:my-[8px]"></div>
-                {/* Phone Section 1 */}
-                <div className="flex flex-col gap-[3px] sm:gap-[4px] md:gap-[5px] lg:gap-[6px] justify-start items-start w-full">
-                  <h3 className="text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[21px] md:leading-[21px] lg:leading-[22px] text-left bg-[linear-gradient(90deg,#ffffff_0%,_#ffffff4c_100%)] bg-clip-text text-transparent">
-                    Phone:
-                  </h3>
-                  <div className="flex flex-row justify-start items-center w-full">
-                    <span className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-manrope font-extralight leading-[25px] sm:leading-[28px] md:leading-[31px] lg:leading-[33px] text-left bg-[linear-gradient(90deg,#ffffff_0%,_#ffffff4c_100%)] bg-clip-text text-transparent">
-                      +249912308175 (sudan)
-                    </span>
-                  </div>
-                </div>
-                {/* Divider Line */}
-                <div className="w-full h-[1px] bg-global-8 my-[4px] sm:my-[6px] md:my-[7px] lg:my-[8px]"></div>
-                {/* Phone Section 2 */}
-                <div className="flex flex-col gap-[3px] sm:gap-[4px] md:gap-[5px] lg:gap-[6px] justify-start items-start w-full">
-                  <h3 className="text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[21px] md:leading-[21px] lg:leading-[22px] text-left bg-[linear-gradient(90deg,#ffffff_0%,_#ffffff4c_100%)] bg-clip-text text-transparent">
-                    Phone:
-                  </h3>
-                  <div className="flex flex-row justify-start items-center w-full">
-                    <span className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-manrope font-extralight leading-[25px] sm:leading-[28px] md:leading-[31px] lg:leading-[33px] text-left bg-[linear-gradient(90deg,#ffffff_0%,_#ffffff4c_100%)] bg-clip-text text-transparent">
-                      +20 155 5067624 (Egypt)
+                      info@talinglobalgroup.com
                     </span>
                   </div>
                 </div>
@@ -202,9 +199,10 @@ const ContactPage = () => {
                     type="submit"
                     loading={isSubmitting}
                     onClick={() => {}}
-                    className="self-start px-[20px] sm:px-[24px] md:px-[28px] lg:px-[32px] py-[8px] sm:py-[10px] md:py-[12px] lg:py-[14px] border-2 border-[#ffffff26] bg-global-2 shadow-[0px_0px_1px_#0055ff1e] hover:bg-opacity-90 transition-all duration-200 hover:scale-105 rounded sm:rounded-md md:rounded-lg"
+                    variant="primary"
+                    className="self-start w-auto"
                   >
-                    <span className="text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[21px] md:leading-[21px] lg:leading-[22px] text-left text-global-6">
+                    <span className="text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[21px] md:leading-[21px] lg:leading-[22px] text-left">
                       Submit
                     </span>
                   </Button>
@@ -222,14 +220,10 @@ const ContactPage = () => {
             <div className="flex flex-row justify-center items-end w-full">
               <div className="flex flex-col gap-[8px] sm:gap-[12px] md:gap-[14px] lg:gap-[16px] justify-start items-center w-full sm:w-[80%] md:w-[60%] lg:w-[46%] mt-[63px] sm:mt-[94px] md:mt-[110px] lg:mt-[126px] text-container-sm">
                 {/* Let's get started today! */}
-                <Button 
-                  onClick={() => {}}
-                  className="px-[5px] sm:px-[7px] md:px-[8px] lg:px-[10px] py-[5px] sm:py-[7px] md:py-[8px] lg:py-[10px] bg-global-1"
-                >
-                  <span className="text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-dm-sans font-medium leading-[19px] sm:leading-[20px] md:leading-[20px] lg:leading-[21px] text-left text-global-6">
+             
+                  <span className="text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-dm-sans font-medium leading-[19px] sm:leading-[20px] md:leading-[20px] lg:leading-[21px] text-left text-white">
                     Let's get started today!
                   </span>
-                </Button>
                 {/* Main CTA Content */}
                 <div className="flex flex-col gap-[18px] sm:gap-[27px] md:gap-[31px] lg:gap-[36px] justify-start items-center w-full">
                   <div className="flex flex-col gap-[2px] sm:gap-[3px] md:gap-[3px] lg:gap-[4px] justify-start items-center w-full">
@@ -243,13 +237,16 @@ const ContactPage = () => {
                     </div>
                   </div>
                   {/* Contact Us Button */}
-                  <div className="flex flex-row justify-center items-center w-full sm:w-[40%] md:w-[35%] lg:w-[26%] border-2 border-[#ffffff26] bg-global-7 px-[10px] sm:px-[15px] md:px-[18px] lg:px-[20px] py-[10px] sm:py-[15px] md:py-[18px] lg:py-[20px] shadow-[0px_0px_1px_#ffffff0c] hover:bg-opacity-90 transition-all duration-200 hover:scale-105">
-                    <Link href="/contact" className="w-full text-center">
-                      <span className="text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-dm-sans font-medium leading-[19px] sm:leading-[20px] md:leading-[20px] lg:leading-[21px] text-left text-global-1">
-                        Contact Us
-                      </span>
-                    </Link>
-                  </div>
+                  <Button 
+                    variant="primary"
+                    size="lg"
+                    className="w-auto"
+                    onClick={() => {}}
+                  >
+                    <span className="text-[14px] sm:text-[15px] md:text-[15px] lg:text-[16px] font-dm-sans font-medium leading-[19px] sm:leading-[20px] md:leading-[20px] lg:leading-[21px] text-left">
+                      Contact Us
+                    </span>
+                  </Button>
                 </div>
               </div>
             </div>

@@ -14,21 +14,21 @@ const Button = ({
   ...props
 }) => {
   const variants = {
-    primary: 'bg-global-2 text-global-6 hover:bg-opacity-90 active:bg-opacity-80 focus:ring-global-4',
-    secondary: 'bg-button-1 text-global-2 hover:bg-opacity-90 active:bg-opacity-80 focus:ring-global-3',
-    outline: 'border border-global-3 text-global-1 bg-transparent hover:bg-global-6 active:bg-opacity-90 focus:ring-global-3',
-    ghost: 'text-global-1 bg-transparent hover:bg-global-6 active:bg-opacity-90 focus:ring-global-3'
+    primary: 'bg-white text-black hover:bg-gray-100 active:bg-gray-200 focus:ring-gray-300 border border-gray-200',
+    secondary: 'bg-gray-50 text-black hover:bg-gray-100 active:bg-gray-200 focus:ring-gray-300 border border-gray-200',
+    outline: 'border border-gray-300 text-black bg-transparent hover:bg-gray-50 active:bg-gray-100 focus:ring-gray-300',
+    ghost: 'text-black bg-transparent hover:bg-gray-50 active:bg-gray-100 focus:ring-gray-300'
   };
 
   const sizes = {
-    xs: 'px-2 py-1 text-xs sm:px-2.5 sm:py-1.5 sm:text-xs',
-    sm: 'px-2.5 py-1.5 text-xs sm:px-3 sm:py-2 sm:text-sm md:text-sm',
-    md: 'px-3 py-2 text-sm sm:px-4 sm:py-2.5 sm:text-base md:text-base',
-    lg: 'px-4 py-2.5 text-base sm:px-5 sm:py-3 sm:text-lg md:text-lg lg:text-xl'
+    xs: 'px-3 py-2 text-xs h-10',
+    sm: 'px-4 py-2.5 text-sm h-11',
+    md: 'px-5 py-3 text-base h-12',
+    lg: 'px-6 py-4 text-lg h-14'
   };
 
-  const responsiveRadius = 'rounded sm:rounded-md md:rounded-lg';
-  const responsiveFocus = 'focus:ring-2 sm:focus:ring-2 md:focus:ring-4';
+  const responsiveRadius = 'rounded-lg';
+  const responsiveFocus = 'focus:ring-2 focus:ring-offset-2';
 
   const LoadingSpinner = () => (
     <svg 
@@ -72,12 +72,12 @@ const Button = ({
         ${disabled || loading ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:scale-105 active:scale-95'} 
         ${loading ? 'relative' : ''}
         font-manrope
-        font-normal
+        font-medium
         inline-flex
         items-center
         justify-center
-        min-h-[44px] sm:min-h-[48px]
         touch-manipulation
+        shadow-sm
         ${className}
       `?.trim()?.replace(/\s+/g, ' ')}
       aria-disabled={disabled || loading}

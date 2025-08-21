@@ -15,19 +15,13 @@ const CTASection = () => {
         <div className="container-standard">
           <div className="flex flex-row justify-center items-end w-full">
             <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[16px] justify-start items-center w-full sm:w-4/5 md:w-3/5 lg:w-[46%] mt-24 sm:mt-28 md:mt-32 lg:mt-[126px]">
-              <Button 
-                variant="ghost"
-                size="sm"
-                className="bg-global-1 text-global-6 px-2 sm:px-3 md:px-4 lg:px-[10px] py-2 sm:py-3 md:py-4 lg:py-[10px]"
-                onClick={() => {}}
-              >
-                <span className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-dm-sans font-medium leading-[19px] sm:leading-[20px] md:leading-[21px] lg:leading-[21px] text-left text-global-6">
+              
+                <span className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-dm-sans font-medium leading-[19px] sm:leading-[20px] md:leading-[21px] lg:leading-[21px] text-center text-white">
                   Let's get started today!
                 </span>
-              </Button>
               <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-[36px] justify-start items-center w-full">
                 <div className="flex flex-col gap-1 sm:gap-2 md:gap-3 lg:gap-[4px] justify-start items-center w-full text-container-sm">
-                  <h2 className="text-[32px] sm:text-[38px] md:text-[42px] lg:text-[48px] font-manrope font-semibold leading-[44px] sm:leading-[52px] md:leading-[58px] lg:leading-[66px] text-center text-global-6">
+                  <h2 className="text-[32px] text-white sm:text-[38px] md:text-[42px] lg:text-[48px] font-manrope font-semibold leading-[44px] sm:leading-[52px] md:leading-[58px] lg:leading-[66px] text-center text-global-6">
                     Ready to build your vision?
                   </h2>
                   <div className="w-full text-balanced">
@@ -38,12 +32,12 @@ const CTASection = () => {
                 </div>
                 <Link href="/contact">
                   <Button 
-                    variant="secondary"
+                    variant="primary"
                     size="lg"
-                    className="border-2 border-[#ffffff26] shadow-[0px_0px_1px_#ffffff0c] px-4 sm:px-5 md:px-6 lg:px-[20px] py-4 sm:py-5 lg:py-[20px]"
+                    className="w-auto"
                     onClick={() => {}}
                   >
-                    <span className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-dm-sans font-medium leading-[19px] sm:leading-[20px] md:leading-[21px] lg:leading-[21px] text-left text-global-1">
+                    <span className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-dm-sans font-medium leading-[19px] sm:leading-[20px] md:leading-[21px] lg:leading-[21px] text-center">
                       Contact Us
                     </span>
                   </Button>

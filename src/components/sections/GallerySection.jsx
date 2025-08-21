@@ -201,10 +201,10 @@ const GallerySection = () => {
           <Button 
             variant="primary"
             size="lg"
-            className="border-2 border-[#ffffff26] shadow-[0px_0px_1px_#0055ff1e] px-6 lg:px-8 py-4 lg:py-5 transition-all duration-300 hover:border-[#ffffff40] hover:shadow-[0px_0px_8px_#0055ff3e]"
+            className="w-auto"
             onClick={() => console.log(`View all ${activeTab.toLowerCase()}`)}
           >
-            <span className="text-sm lg:text-base font-medium text-white">
+            <span className="text-sm lg:text-base font-medium">
               View All gallery
             </span>
           </Button>

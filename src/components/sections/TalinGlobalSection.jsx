@@ -73,7 +73,7 @@ const TalinGlobalSection = () => {
   };
 
   return (
-    <section className="w-full bg-black min-h-screen flex flex-col justify-center section-padding relative">
+    <section id="talin-global" className="w-full bg-black min-h-screen flex flex-col justify-center section-padding relative">
       <div className="container-standard relative z-10">
         
         {/* Image Carousel Section - Now takes more space */}

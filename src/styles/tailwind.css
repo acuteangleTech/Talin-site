@@ -6,10 +6,10 @@
   :root {
     /* Global Colors */
     --global-bg-1: #000000;
-    --global-bg-2: #0055fe;
+    --global-bg-2: #ffffff;
     --global-bg-3: #010328;
     --global-bg-4: #0a0d13;
-    --global-bg-5: #3f7dce56;
+    --global-bg-5: #ffffff56;
     --global-bg-6: #f3f4f6;
     --global-bg-7: #ffffff;
     --global-bg-8: #ffffff19;
@@ -18,13 +18,16 @@
     --global-text-1: #000000;
     --global-text-2: #0000007f;
     --global-text-3: #000000cc;
-    --global-text-4: #0055fe;
+    --global-text-4: #ffffff;
     --global-text-5: #e6e6e6;
     --global-text-6: #ffffff;
     --global-text-7: #ffffff99;
     
     /* Button Colors */
-    --button-bg-1: #fafafa;
+    --button-bg-1: #ffffff;
+    --button-bg-2: #f8f9fa;
+    --button-bg-3: #e9ecef;
+    --button-bg-4: #dee2e6;
     
     /* EditText Colors */
     --edittext-bg-1: #0d0d0d;
@@ -88,10 +91,19 @@
   .bg-button-1 {
     background-color: var(--button-bg-1);
   }
+  .bg-button-2 {
+    background-color: var(--button-bg-2);
+  }
+  .bg-button-3 {
+    background-color: var(--button-bg-3);
+  }
+  .bg-button-4 {
+    background-color: var(--button-bg-4);
+  }
   
   /* EditText */
   .bg-edittext-1 {
-    background-color: var(--edittext-1);
+    background-color: var(--edittext-bg-1);
   }
 
   /* Enhanced Shadow Effects */

@@ -1,12 +1,23 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter, usePathname } from 'next/navigation';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
 
   const scrollToSection = (sectionId) => {
+    // If not on home page, navigate to home page first
+    if (!isHomePage) {
+      router.push(`/#${sectionId}`);
+      setMenuOpen(false);
+      return;
+    }
+
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ 
@@ -17,6 +28,16 @@ const Header = () => {
     // Close mobile menu if open
     setMenuOpen(false);
   };
+
+  const handleNavigation = (path) => {
+    router.push(path);
+    setMenuOpen(false);
+  };
+
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="absolute top-0 left-0 w-full bg-black/20 backdrop-blur-md z-10 p-3 sm:p-4 md:p-6 lg:p-[12px]">
@@ -47,30 +68,81 @@ const Header = () => {
               <Link href="/" className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-6 hover:text-global-4 transition-colors duration-200">
                 Home
               </Link>
-              <button 
-                onClick={() => scrollToSection('about')}
-                className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
-              >
-                About
-              </button>
-              <button 
-                onClick={() => scrollToSection('companies')}
-                className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
-              >
-                Companies
-              </button>
-              <button 
-                onClick={() => scrollToSection('factories')}
-                className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
-              >
-                Factories
-              </button>
-              <button 
-                onClick={() => scrollToSection('gallery')}
-                className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
-              >
-                Gallery
-              </button>
+              {isHomePage ? (
+                <button 
+                  onClick={() => scrollToSection('about')}
+                  className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
+                >
+                  About
+                </button>
+              ) : (
+                <Link 
+                  href="/#about"
+                  className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200"
+                >
+                  About
+                </Link>
+              )}
+              {isHomePage ? (
+                <button 
+                  onClick={() => scrollToSection('companies')}
+                  className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
+                >
+                  Companies
+                </button>
+              ) : (
+                <Link 
+                  href="/#companies"
+                  className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200"
+                >
+                  Companies
+                </Link>
+              )}
+              {isHomePage ? (
+                <button 
+                  onClick={() => scrollToSection('factories')}
+                  className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
+                >
+                  Factories
+                </button>
+              ) : (
+                <Link 
+                  href="/#factories"
+                  className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200"
+                >
+                  Factories
+                </Link>
+              )}
+              {isHomePage ? (
+                <button 
+                  onClick={() => scrollToSection('gallery')}
+                  className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
+                >
+                  Gallery
+                </button>
+              ) : (
+                <Link 
+                  href="/#gallery"
+                  className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200"
+                >
+                  Gallery
+                </Link>
+              )}
+              {isHomePage ? (
+                <button 
+                  onClick={() => scrollToSection('talin-global')}
+                  className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 cursor-pointer"
+                >
+                  Talin Global
+                </button>
+              ) : (
+                <Link 
+                  href="/#talin-global"
+                  className="text-[14px] md:text-[15px] lg:text-[16px] font-manrope font-normal leading-[20px] md:leading-[21px] lg:leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200"
+                >
+                  Talin Global
+                </Link>
+              )}
             </nav>
           </div>
 
@@ -94,50 +166,111 @@ const Header = () => {
           {/* Get in Touch Button - Desktop */}
           <Link 
             href="/contact" 
-            className="hidden lg:flex justify-center items-center w-auto border-2 border-[#ffffff26] bg-global-2 px-4 py-3 md:px-5 md:py-4 lg:px-[20px] lg:py-[20px] shadow-[0px_0px_1px_#0055ff1e] hover:bg-opacity-90 transition-all duration-200 hover:scale-105"
+            className="hidden lg:flex justify-center items-center w-auto border-2 border-gray-200 bg-white text-black px-4 py-3 md:px-5 md:py-4 lg:px-[20px] lg:py-[20px] shadow-sm hover:bg-gray-50 transition-all duration-200 hover:scale-105 rounded-lg h-12"
           >
-            <span className="text-[14px] md:text-[15px] lg:text-[16px] font-dm-sans font-medium leading-[19px] md:leading-[20px] lg:leading-[21px] text-left text-global-6">
+            <span className="text-[14px] md:text-[15px] lg:text-[16px] font-dm-sans font-medium leading-[19px] md:leading-[20px] lg:leading-[21px] text-left">
               Get in touch
             </span>
           </Link>
         </div>
 
         {/* Mobile Navigation Menu */}
-        <nav className={`${menuOpen ? 'block' : 'hidden'} lg:hidden bg-global-1 rounded-lg shadow-lg`}>
+        <nav className={`${menuOpen ? 'block' : 'hidden'} lg:hidden bg-black rounded-lg shadow-lg z-[9999] mt-4`}>
           {/* Mobile Menu Items */}
           <div className="flex flex-col gap-0">
-            <Link href="/" className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-6 hover:text-global-4 transition-colors duration-200 py-3 px-4 hover:bg-global-8">
+            <Link 
+              href="/" 
+              onClick={() => setMenuOpen(false)}
+              className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-6 hover:text-global-4 transition-colors duration-200 py-3 px-4 hover:bg-global-8"
+            >
               Home
             </Link>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
-            >
-              About
-            </button>
-            <button 
-              onClick={() => scrollToSection('companies')}
-              className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
-            >
-              Companies
-            </button>
-            <button 
-              onClick={() => scrollToSection('factories')}
-              className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
-            >
-              Factories
-            </button>
-            <button 
-              onClick={() => scrollToSection('gallery')}
-              className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
-            >
-              Gallery
-            </button>
+            {isHomePage ? (
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
+              >
+                About
+              </button>
+            ) : (
+              <Link 
+                href="/#about"
+                onClick={() => setMenuOpen(false)}
+                className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8"
+              >
+                About
+              </Link>
+            )}
+            {isHomePage ? (
+              <button 
+                onClick={() => scrollToSection('companies')}
+                className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
+              >
+                Companies
+              </button>
+            ) : (
+              <Link 
+                href="/#companies"
+                onClick={() => setMenuOpen(false)}
+                className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8"
+              >
+                Companies
+              </Link>
+            )}
+            {isHomePage ? (
+              <button 
+                onClick={() => scrollToSection('factories')}
+                className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
+              >
+                Factories
+              </button>
+            ) : (
+              <Link 
+                href="/#factories"
+                onClick={() => setMenuOpen(false)}
+                className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8"
+              >
+                Factories
+              </Link>
+            )}
+            {isHomePage ? (
+              <button 
+                onClick={() => scrollToSection('gallery')}
+                className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
+              >
+                Gallery
+              </button>
+            ) : (
+              <Link 
+                href="/#gallery"
+                onClick={() => setMenuOpen(false)}
+                className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8"
+              >
+                Gallery
+              </Link>
+            )}
+            {isHomePage ? (
+              <button 
+                onClick={() => scrollToSection('talin-global')}
+                className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8 cursor-pointer text-left w-full"
+              >
+                Talin Global
+              </button>
+            ) : (
+              <Link 
+                href="/#talin-global"
+                onClick={() => setMenuOpen(false)}
+                className="text-[16px] font-manrope font-normal leading-[22px] text-left text-global-7 hover:text-global-6 transition-colors duration-200 py-3 px-4 hover:bg-global-8"
+              >
+                Talin Global
+              </Link>
+            )}
             <Link 
               href="/contact" 
-              className="mx-4 mb-3 flex justify-center items-center w-auto border-2 border-[#ffffff26] bg-global-2 px-4 py-3 hover:bg-opacity-90 transition-all duration-200 rounded-md"
+              onClick={() => setMenuOpen(false)}
+              className="mx-4 mb-3 flex justify-center items-center w-auto border-2 border-gray-200 bg-white text-black px-4 py-3 hover:bg-gray-50 transition-all duration-200 rounded-lg h-11"
             >
-              <span className="text-[16px] font-dm-sans font-medium leading-[21px] text-left text-global-6">
+              <span className="text-[16px] font-dm-sans font-medium leading-[21px] text-left">
                 Get in touch
               </span>
             </Link>

@@ -6,8 +6,19 @@ import Button from '@/components/ui/Button';
 const HeroSection = () => {
   return (
     <section className="w-full bg-global-3 relative min-h-screen flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-black to-transparent opacity-80"></div>
-      <div className="container-standard relative z-10">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/hero.png"
+          alt="Hero Background"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black to-transparent opacity-80"></div>
+      </div>
+      <div className="container-standard relative z-0">
         <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-8 lg:gap-16">
           {/* Hero Content */}
           <div className="flex flex-col gap-8 sm:gap-12 md:gap-16 lg:gap-[48px] justify-start items-start w-full lg:w-[55%]">
@@ -32,18 +43,26 @@ const HeroSection = () => {
               </div>
             </div>
             <Button 
-              variant="secondary"
+              variant="primary"
               size="md"
-              className="border-2 border-[#ffffff26] shadow-[0px_0px_1px_#ffffff0c] px-4 sm:px-5 lg:px-[16px] py-2 sm:py-3 lg:py-[12px]"
-              onClick={() => {}}
+              className="w-auto"
+              onClick={() => {
+                const element = document.getElementById('talin-global');
+                if (element) {
+                  element.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                  });
+                }
+              }}
             >
-              <span className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[14px] font-manrope font-medium leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[20px] text-left text-global-1">
+              <span className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[14px] font-manrope font-medium leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[20px] text-left">
                 Explore More
               </span>
             </Button>
           </div>
           {/* Corporate Excellence Card */}
-          <div className="flex flex-row justify-center items-center w-full lg:w-[320px] bg-[#3f7dce56] border border-[#ffffff26] rounded-sm p-3 sm:p-4 md:p-5 lg:p-[8px] mt-8 lg:mt-16 lg:self-end lg:h-[140px]">
+          <div className="flex flex-row justify-center items-center w-full lg:w-[320px] bg-[#ffffff56] border border-[#ffffff26] rounded-sm p-3 sm:p-4 md:p-5 lg:p-[8px] mt-8 lg:mt-16 lg:self-end lg:h-[140px]">
             <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-[16px] justify-start items-start w-full">
               <div className="flex flex-row justify-start items-center w-full">
                 <h3 className="text-[12px] sm:text-[13px] md:text-[14px] lg:text-[12px] font-manrope font-bold leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[16px] text-left text-global-6">

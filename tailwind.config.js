@@ -31,7 +31,10 @@ module.exports = {
           text7: "var(--global-text-7)"
         },
         button: {
-          background1: "var(--button-bg-1)"
+          background1: "var(--button-bg-1)",
+          background2: "var(--button-bg-2)",
+          background3: "var(--button-bg-3)",
+          background4: "var(--button-bg-4)"
         },
         edittext: {
           background1: "var(--edittext-bg-1)"

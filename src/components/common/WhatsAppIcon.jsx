@@ -3,7 +3,7 @@ import React from 'react';
 
 const WhatsAppIcon = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '00249912200031';
+    const phoneNumber = '+249912200031';
     const message = 'Hello! I would like to get in touch with you.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

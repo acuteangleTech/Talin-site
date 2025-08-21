@@ -4,15 +4,15 @@ import Image from 'next/image';
 
 const MessageSection = () => {
   return (
-    <section className="w-full bg-global-6 py-16 sm:py-20 md:py-24 lg:py-[108px] px-8 sm:px-10 md:px-12 lg:px-[56px]">
-      <div className="w-full max-w-[1440px] mx-auto">
+    <section className="w-full bg-global-6 section-padding">
+      <div className="container-standard">
         <div className="flex flex-col gap-16 sm:gap-20 md:gap-24 lg:gap-[98px] justify-center items-center w-full">
           {/* Message Header */}
-          <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-[24px] justify-start items-center w-full sm:w-4/5 md:w-3/5 lg:w-[40%]">
+          <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-[24px] justify-start items-center w-full sm:w-4/5 md:w-3/5 lg:w-[40%] text-container-sm">
             <h2 className="text-[32px] sm:text-[38px] md:text-[42px] lg:text-[48px] font-manrope font-medium leading-[44px] sm:leading-[52px] md:leading-[58px] lg:leading-[66px] text-center bg-gradient-to-r from-black to-[#666666] bg-clip-text text-transparent mt-2 sm:mt-3 md:mt-4 lg:mt-[8px]">
               Our Message
             </h2>
-            <div className="flex flex-col justify-center items-center w-full ml-3 sm:ml-4 md:ml-5 lg:ml-[12px]">
+            <div className="flex flex-col justify-center items-center w-full">
               <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[20px] font-manrope font-normal leading-[24px] sm:leading-[26px] md:leading-[28px] lg:leading-[28px] text-center text-global-3">
                 Real stories from businesses we've partnered with to create
               </p>
@@ -30,7 +30,7 @@ const MessageSection = () => {
               height={332}
               className="w-full lg:w-[34%] h-auto"
             />
-            <div className="flex flex-col gap-10 sm:gap-12 md:gap-14 lg:gap-[56px] justify-start items-center w-full lg:w-[60%]">
+            <div className="flex flex-col gap-10 sm:gap-12 md:gap-14 lg:gap-[56px] justify-start items-center w-full lg:w-[60%] text-container-sm">
               <div className="flex flex-row justify-start items-center w-full">
                 <Image 
                   src="/images/img_group_2_blue_a700.svg" 
@@ -43,9 +43,11 @@ const MessageSection = () => {
                   Talin Global Group
                 </h3>
               </div>
-              <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[20px] font-manrope font-medium leading-[24px] sm:leading-[26px] md:leading-[28px] lg:leading-[30px] text-left text-global-3 w-full mb-6 sm:mb-7 md:mb-8 lg:mb-[34px]">
-                "At Talin Global Group, our mission is to make inspirational, high-quality products and services accessible to our customers in every aspect of our business. We believe the quest for perfection delivers the most profitable results in the long term. By combining our strengths as a group with the expertise of our teams, we continuously identify new trends and innovative solutions, adding value to our conglomerate and the markets we serve."
-              </p>
+              <div className="w-full text-balanced">
+                <p className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[20px] font-manrope font-medium leading-[24px] sm:leading-[26px] md:leading-[28px] lg:leading-[30px] text-justify text-global-3 w-full mb-6 sm:mb-7 md:mb-8 lg:mb-[34px]">
+                  "At Talin Global Group, our mission is to make inspirational, high-quality products and services accessible to our customers in every aspect of our business. We believe the quest for perfection delivers the most profitable results in the long term. By combining our strengths as a group with the expertise of our teams, we continuously identify new trends and innovative solutions, adding value to our conglomerate and the markets we serve."
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -22,8 +22,8 @@ const ExcellenceSection = () => {
   ];
 
   return (
-    <section className="w-full bg-global-1 py-8 sm:py-10 md:py-12 lg:py-[50px]">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-global-1 section-padding">
+      <div className="container-standard">
         <div className="flex flex-col gap-16 sm:gap-20 md:gap-24 lg:gap-[100px] justify-start items-center w-full">
           {/* Excellence Header */}
           <div className="flex flex-col lg:flex-row justify-start items-start w-full gap-8 lg:gap-16">
@@ -32,14 +32,16 @@ const ExcellenceSection = () => {
                 Talin Global Group: Excellence Without Borders
               </h2>
             </div>
-            <div className="w-full lg:w-[60%]">
-              <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-manrope font-normal leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[24px] text-left text-global-7">
-                Talin Global Group operates across multiple sectors to serve local, regional, and international markets. We specialize in supplying factories, machinery, and equipment for high-efficiency operations; producing cosmetics and perfumes for Gulf and local markets; developing real estate projects with innovative construction solutions; and operating integrated factories producing beverages, food products, and consumer goods.
-              </p>
+            <div className="w-full lg:w-[60%] text-container-sm">
+              <div className="w-full text-balanced">
+                <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-manrope font-normal leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[24px] text-justify text-global-7">
+                  Talin Global Group operates across multiple sectors to serve local, regional, and international markets. We specialize in supplying factories, machinery, and equipment for high-efficiency operations; producing cosmetics and perfumes for Gulf and local markets; developing real estate projects with innovative construction solutions; and operating integrated factories producing beverages, food products, and consumer goods.
+                </p>
+              </div>
             </div>
           </div>
           {/* Image Gallery */}
-          <div className="w-full overflow-x-auto">
+          <div className="w-full overflow-x-auto scrollbar-hide sm:scrollbar-default">
             <div className="flex flex-row gap-4 md:gap-6 lg:gap-8 justify-start lg:justify-center items-end w-max lg:w-full lg:max-w-7xl mx-auto px-4 lg:px-0">
               {/* First Image - Real Estate */}
               <div className="flex flex-col justify-end items-center w-[160px] sm:w-[180px] md:w-[250px] lg:w-[300px] flex-shrink-0">

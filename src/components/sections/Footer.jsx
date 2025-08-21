@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-global-1 py-6 sm:py-8 md:py-10 lg:py-[50px] px-4 sm:px-6 md:px-8 lg:px-[48px]">
-      <div className="w-full max-w-[1440px] mx-auto">
+    <footer className="w-full bg-global-1 section-padding">
+      <div className="container-standard">
         <div className="flex flex-col lg:flex-row gap-8 md:gap-12 lg:gap-16 xl:gap-20">
           {/* Main Content Section */}
           <div className="flex flex-col gap-12 sm:gap-16 md:gap-20 lg:gap-[220px] w-full lg:w-2/3">
@@ -24,9 +24,13 @@ const Footer = () => {
                   Talin Global <br className="hidden sm:block" /> Group
                 </h2>
               </div>
-              <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] font-manrope font-light leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[27px] text-left text-global-6 max-w-full sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%]">
-                We combine innovation and expertise to create experiences that matter, building a better future together.
-              </p>
+              <div className="text-container-sm">
+                <div className="w-full text-balanced">
+                  <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] font-manrope font-light leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[27px] text-justify text-global-6">
+                    We combine innovation and expertise to create experiences that matter, building a better future together.
+                  </p>
+                </div>
+              </div>
             </div>
             
             {/* Copyright Section */}
@@ -78,26 +82,7 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Companies Column */}
-              <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[22px]">
-                <h3 className="text-[11px] sm:text-[12px] font-inter font-normal leading-[14px] sm:leading-[16px] text-global-6">
-                  Companies
-                </h3>
-                <div className="flex flex-col gap-2 sm:gap-3 lg:gap-[6px]">
-                  <p className="text-[11px] sm:text-[12px] lg:text-[13px] font-manrope font-normal leading-[15px] sm:leading-[17px] lg:leading-[18px] text-global-7">
-                    Talin International
-                  </p>
-                  <p className="text-[10px] sm:text-[11px] lg:text-[12px] font-manrope font-normal leading-[14px] sm:leading-[16px] lg:leading-[18px] text-global-7">
-                    Utopia Global General Trading
-                  </p>
-                  <p className="text-[11px] sm:text-[12px] lg:text-[13px] font-manrope font-normal leading-[15px] sm:leading-[17px] lg:leading-[18px] text-global-7">
-                    Hollywood Cosmetics
-                  </p>
-                  <p className="text-[11px] sm:text-[12px] lg:text-[13px] font-manrope font-normal leading-[15px] sm:leading-[17px] lg:leading-[18px] text-global-7">
-                    Talin Properties
-                  </p>
-                </div>
-              </div>
+           
 
               {/* Socials Column */}
               <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[22px]">

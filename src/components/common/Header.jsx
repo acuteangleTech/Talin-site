@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header className="absolute top-0 left-0 w-full bg-black/20 backdrop-blur-md z-10 p-3 sm:p-4 md:p-6 lg:p-[12px]">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container-standard">
         <div className="flex flex-row justify-between items-center w-full">
           {/* Logo and Brand Section */}
           <div className="flex flex-row gap-6 sm:gap-8 md:gap-10 lg:gap-[48px] justify-start items-center w-auto">

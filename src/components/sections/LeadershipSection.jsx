@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const LeadershipSection = () => {
   return (
-    <section id="about" className="w-full bg-global-1 py-16 sm:py-20 md:py-24 lg:py-[106px]">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="w-full bg-global-1 section-padding">
+      <div className="container-standard">
         <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-8 lg:gap-16">
           {/* Leadership Image */}
           <div className="w-full lg:w-[44%] relative">
@@ -22,15 +22,17 @@ const LeadershipSection = () => {
             </div>
           </div>
           {/* Leadership Content */}
-          <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-[30px] justify-start items-start w-full lg:w-[48%]">
-            <h2 className="text-[32px] sm:text-[38px] md:text-[42px] lg:text-[48px] font-manrope font-medium leading-[40px] sm:leading-[46px] md:leading-[50px] lg:leading-[55px] text-left bg-gradient-to-r from-white to-[#ffffff4c] bg-clip-text text-transparent w-full lg:w-[78%]">
+          <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-[30px] justify-start items-start w-full lg:w-[48%] text-container-sm">
+            <h2 className="text-[32px] sm:text-[38px] md:text-[42px] lg:text-[48px] font-manrope font-medium leading-[40px] sm:leading-[46px] md:leading-[50px] lg:leading-[55px] text-left bg-gradient-to-r from-white to-[#ffffff4c] bg-clip-text text-transparent w-full">
               Visionary Leadership Behind Our Journey
             </h2>
-            <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-manrope leading-[22px] sm:leading-[24px] md:leading-[26px] lg:leading-[26px] text-left text-global-7 w-full lg:w-[88%]">
-              <span className="font-bold text-global-6">Dr. Asaad Eltoum</span>
-              <span className="font-bold text-global-7">,</span>
-              <span className="font-normal"> Founder & President, is a visionary leader in business development with expertise in building strategic partnerships between the public and private sectors. With a strong background in project management and investment, he has successfully established diverse companies across real estate, manufacturing, cosmetics, and perfumery. Guided by his commitment to innovation, quality, and sustainable economic growth, Dr. Eltoum continues to drive impactful ventures that shape industries and create lasting value.</span>
-            </p>
+            <div className="w-full text-balanced">
+              <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-manrope leading-[22px] sm:leading-[24px] md:leading-[26px] lg:leading-[26px] text-justify text-global-7 w-full">
+                <span className="font-bold text-global-6">Dr. Asaad Eltoum</span>
+                <span className="font-bold text-global-7">,</span>
+                <span className="font-normal"> Founder & President, is a visionary leader in business development with expertise in building strategic partnerships between the public and private sectors. With a strong background in project management and investment, he has successfully established diverse companies across real estate, manufacturing, cosmetics, and perfumery. Guided by his commitment to innovation, quality, and sustainable economic growth, Dr. Eltoum continues to drive impactful ventures that shape industries and create lasting value.</span>
+              </p>
+            </div>
           </div>
         </div>
         {/* Leadership Name */}

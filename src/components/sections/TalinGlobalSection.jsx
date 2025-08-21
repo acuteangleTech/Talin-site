@@ -73,8 +73,8 @@ const TalinGlobalSection = () => {
   };
 
   return (
-    <section className="w-full bg-black min-h-screen flex flex-col justify-center py-12 sm:py-16 md:py-20 lg:py-24 relative">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 relative z-10">
+    <section className="w-full bg-black min-h-screen flex flex-col justify-center section-padding relative">
+      <div className="container-standard relative z-10">
         
         {/* Image Carousel Section - Now takes more space */}
         <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-24">
@@ -116,15 +116,17 @@ const TalinGlobalSection = () => {
         </div>
 
         {/* Text Description Section - Repositioned and restyled */}
-        <div className="w-full max-w-5xl mx-auto">
+        <div className="w-full max-w-5xl mx-auto text-container-sm">
           <div className="text-left sm:text-center">
-            <p className="text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl leading-loose sm:leading-[2.2] md:leading-[2.4] lg:leading-[2.6] font-light tracking-wide">
-              Talin Global Group is a diversified conglomerate with operations spanning real estate, 
-              manufacturing, cosmetics, trading, and industrial solutions. Our mission is to create 
-              sustainable value by combining local expertise with international innovation. Through 
-              strategic partnerships with public and private sectors, we deliver high-quality products 
-              and services to markets across Sudan, the UAE, Egypt, Saudi Arabia, and beyond.
-            </p>
+            <div className="w-full text-balanced">
+              <p className="text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl leading-loose sm:leading-[2.2] md:leading-[2.4] lg:leading-[2.6] font-light tracking-wide text-justify">
+                Talin Global Group is a diversified conglomerate with operations spanning real estate, 
+                manufacturing, cosmetics, trading, and industrial solutions. Our mission is to create 
+                sustainable value by combining local expertise with international innovation. Through 
+                strategic partnerships with public and private sectors, we deliver high-quality products 
+                and services to markets across Sudan, the UAE, Egypt, Saudi Arabia, and beyond.
+              </p>
+            </div>
           </div>
         </div>
       </div>

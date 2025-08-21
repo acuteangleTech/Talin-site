@@ -105,18 +105,20 @@ const GallerySection = () => {
   };
 
   return (
-    <section id="gallery" className="w-full bg-black py-16 lg:py-24">
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="gallery" className="w-full bg-black section-padding">
+      <div className="container-standard">
         <div className="flex flex-col items-center">
           
           {/* Header Section */}
-          <div className="text-center mb-12 lg:mb-16">
+          <div className="text-center mb-12 lg:mb-16 text-container-sm">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-normal mb-4 bg-gradient-to-r from-white to-[#ffffff4c] bg-clip-text text-transparent">
               A Glimpse Into Our World
             </h2>
-            <p className="text-gray-400 text-sm lg:text-base max-w-md mx-auto">
-              A visual showcase of our work, culture, and milestones.
-            </p>
+            <div className="w-full text-balanced">
+              <p className="text-gray-400 text-sm lg:text-base max-w-md mx-auto text-justify">
+                A visual showcase of our work, culture, and milestones.
+              </p>
+            </div>
           </div>
 
           {/* Tab Navigation */}
@@ -190,7 +192,7 @@ const GallerySection = () => {
         </div>
       </div>
 
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container-standard">
         <div className="flex flex-col items-center">
           {/* Divider Line */}
           <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#ffffff19] to-transparent mb-12"></div>

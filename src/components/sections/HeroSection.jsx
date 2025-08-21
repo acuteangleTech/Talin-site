@@ -5,17 +5,10 @@ import Button from '@/components/ui/Button';
 
 const HeroSection = () => {
   return (
-    <section 
-      className="w-full bg-global-3 relative min-h-screen"
-      style={{
-        backgroundImage: "url('/images/img_8023860372_1.png')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
-    >
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row justify-between items-end w-full pt-28 sm:pt-32 md:pt-36 lg:pt-56 pb-12 sm:pb-16 md:pb-20 lg:pb-24 lg:gap-8">
+    <section className="w-full bg-global-3 relative min-h-screen flex items-center">
+      <div className="absolute inset-0 bg-gradient-to-r from-black via-black to-transparent opacity-80"></div>
+      <div className="container-standard relative z-10">
+        <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-8 lg:gap-16">
           {/* Hero Content */}
           <div className="flex flex-col gap-8 sm:gap-12 md:gap-16 lg:gap-[48px] justify-start items-start w-full lg:w-[55%]">
             <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-[32px] justify-start items-start w-full">
@@ -30,9 +23,13 @@ const HeroSection = () => {
                   Global Excellence.
                 </h1>
               </div>
-              <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[14px] font-manrope font-normal leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[22px] text-left text-global-7 w-full lg:w-[75%]">
-                Excellence is our commitment—through unity and innovation, we empower businesses and shape a brighter future.
-              </p>
+              <div className="w-full lg:w-[75%] text-container-sm">
+                <div className="w-full text-balanced">
+                  <p className="text-[13px] sm:text-[14px] md:text-[15px] lg:text-[14px] font-manrope font-normal leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[22px] text-justify text-global-7">
+                    Excellence is our commitment—through unity and innovation, we empower businesses and shape a brighter future.
+                  </p>
+                </div>
+              </div>
             </div>
             <Button 
               variant="secondary"

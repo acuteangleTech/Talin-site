@@ -11,3 +11,165 @@ body {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+/* Custom scrollbar utilities */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Safari and Chrome */
+}
+
+.scrollbar-default {
+  -ms-overflow-style: auto;  /* Internet Explorer 10+ */
+  scrollbar-width: auto;     /* Firefox */
+}
+
+.scrollbar-default::-webkit-scrollbar {
+  display: block;            /* Safari and Chrome */
+}
+
+/* Standardized container and alignment utilities */
+.container-standard {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 1rem;  /* 16px */
+  padding-right: 1rem; /* 16px */
+}
+
+@media (min-width: 640px) {
+  .container-standard {
+    padding-left: 1.5rem;  /* 24px */
+    padding-right: 1.5rem; /* 24px */
+  }
+}
+
+@media (min-width: 768px) {
+  .container-standard {
+    padding-left: 2rem;  /* 32px */
+    padding-right: 2rem; /* 32px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-standard {
+    padding-left: 2rem;  /* 32px */
+    padding-right: 2rem; /* 32px */
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-standard {
+    padding-left: 3.5rem;  /* 56px */
+    padding-right: 3.5rem; /* 56px */
+  }
+}
+
+/* Standardized text container for consistent paragraph alignment */
+.text-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+.text-container-sm {
+  max-width: 100%;
+  text-align: justify;
+  text-align-last: left;
+}
+
+@media (min-width: 640px) {
+  .text-container-sm {
+    max-width: 90%;
+    text-align: justify;
+    text-align-last: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-container-sm {
+    max-width: 85%;
+    text-align: justify;
+    text-align-last: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-container-sm {
+    max-width: 80%;
+    text-align: justify;
+    text-align-last: left;
+  }
+}
+
+@media (min-width: 1280px) {
+  .text-container-sm {
+    max-width: 75%;
+    text-align: justify;
+    text-align-last: left;
+  }
+}
+
+/* Enhanced paragraph alignment utilities */
+.text-balanced {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+  word-spacing: 0.05em;
+}
+
+.text-left-balanced {
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+  padding-right: 1rem;
+}
+
+.text-center-balanced {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-right-balanced {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+  padding-left: 1rem;
+}
+
+/* Standardized section spacing */
+.section-padding {
+  padding-top: 2rem;    /* 32px */
+  padding-bottom: 2rem; /* 32px */
+}
+
+@media (min-width: 640px) {
+  .section-padding {
+    padding-top: 2.5rem;    /* 40px */
+    padding-bottom: 2.5rem; /* 40px */
+  }
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 3rem;    /* 48px */
+    padding-bottom: 3rem; /* 48px */
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding-top: 3.5rem;    /* 56px */
+    padding-bottom: 3.5rem; /* 56px */
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-padding {
+    padding-top: 4.5rem;    /* 72px */
+    padding-bottom: 4.5rem; /* 72px */
+  }
+}

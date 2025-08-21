@@ -42,17 +42,19 @@ const CompaniesSection = () => {
   };
 
   return (
-    <section id="companies" className="w-full bg-global-6 py-12 sm:py-14 md:py-16 lg:py-[14px]">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-12 sm:gap-14 md:gap-16 lg:gap-[72px] justify-start items-center w-full">
+    <section id="companies" className="w-full bg-global-6 section-padding">
+      <div className="container-standard">
+        <div className="flex flex-col gap-12 sm:gap-14 md:gap-16 lg:gap-[70px] justify-start items-center w-full">
           {/* Companies Header */}
-          <div className="flex flex-row justify-between items-start w-full max-w-[1242px] mt-12 sm:mt-14 md:mt-16 lg:mt-[64px]">
+          <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-[36px] justify-start items-start w-full text-container-sm">
             <h2 className="text-[32px] sm:text-[38px] md:text-[42px] lg:text-[48px] font-manrope font-medium leading-[44px] sm:leading-[52px] md:leading-[58px] lg:leading-[66px] text-left bg-gradient-to-r from-black to-[#666666] bg-clip-text text-transparent">
               Our Companies
             </h2>
-            <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[24px] text-left text-global-3 w-full sm:w-3/4 md:w-2/3 lg:w-[58%] mb-8 sm:mb-10 md:mb-12 lg:mb-[44px]">
-              We are a specialized business development company dedicated to creating high-value investment opportunities through the design and implementation of smart partnership models that deliver mutual benefits to all parties. Our mission is to bridge the gap between the public and private sectors, as well as to facilitate strategic collaborations between private companies themselves, fostering sustainable growth, innovation, and shared profitability.
-            </p>
+            <div className="w-full text-balanced">
+              <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[24px] text-justify text-global-3 w-full">
+                Discover our diverse portfolio of companies, each specializing in different sectors and delivering excellence in their respective fields.
+              </p>
+            </div>
           </div>
           {/* Companies Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7 md:gap-8 lg:gap-[32px] w-full lg:w-[86%]">

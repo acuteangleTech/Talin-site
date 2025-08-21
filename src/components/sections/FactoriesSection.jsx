@@ -44,18 +44,22 @@ const FactoriesSection = () => {
   ];
 
   return (
-    <section id="factories" className="w-full bg-global-6 py-12 sm:py-14 md:py-16 lg:py-[70px] px-8 sm:px-10 md:px-12 lg:px-[56px]">
-      <div className="w-full max-w-[1440px] mx-auto">
+    <section id="factories" className="w-full bg-global-6 section-padding">
+      <div className="container-standard">
         <div className="flex flex-col gap-6 sm:gap-7 md:gap-8 lg:gap-[36px] justify-start items-center w-full">
           {/* Factories Header */}
-          <div className="relative w-full max-w-[1242px] mx-auto px-6 sm:px-8 md:px-10 lg:px-[34px]">
+          <div className="relative w-full max-w-[1242px] mx-auto">
             <div className="flex flex-col lg:flex-row justify-start items-start w-full gap-6 lg:gap-0">
               <h2 className="text-[32px] sm:text-[38px] md:text-[42px] lg:text-[48px] font-manrope font-medium leading-[44px] sm:leading-[52px] md:leading-[58px] lg:leading-[66px] text-left bg-gradient-to-r from-black to-[#666666] bg-clip-text text-transparent mb-6 lg:mb-[68px] w-full lg:w-auto">
                 Our Factories
               </h2>
-              <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[24px] text-left text-global-3 w-full lg:w-[50%] lg:ml-16">
-                Talin Global Group for Advanced Projects operates diverse factories across Sudan, including Khartoum, Madani, Kassala, and Port Sudan. Its industries span bottled water, juices, vinegar, ice cream, packaged foods, paper products, diapers, plastic recycling, and cosmetics. Committed to international quality standards, Talin focuses on sustainability, innovation, and efficiency—empowering local industries and strengthening Sudan's economy.
-              </p>
+              <div className="w-full lg:w-[50%] lg:ml-16 text-container-sm">
+                <div className="w-full text-balanced">
+                  <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[24px] text-justify text-global-3">
+                    Talin Global Group for Advanced Projects operates diverse factories across Sudan, including Khartoum, Madani, Kassala, and Port Sudan. Its industries span bottled water, juices, vinegar, ice cream, packaged foods, paper products, diapers, plastic recycling, and cosmetics. Committed to international quality standards, Talin focuses on sustainability, innovation, and efficiency—empowering local industries and strengthening Sudan's economy.
+                  </p>
+                </div>
+              </div>
             </div>
             {/* Background Text */}
             <div className="hidden lg:block absolute top-[432px] right-0 w-full pr-[78px]">
@@ -283,7 +287,7 @@ const FactoriesSection = () => {
                   </div>
                 </div>
                 {/* Profile Factory */}
-                <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[14px] justify-center items-center self-end w-full sm:w-2/3 md:w-1/2 lg:w-[32%] shadow-[5px_10px_60px_#00000014] bg-global-7 p-2 sm:p-3 md:p-4 lg:p-[8px]">
+                {/* <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[14px] justify-center items-center self-end w-full sm:w-2/3 md:w-1/2 lg:w-[32%] shadow-[5px_10px_60px_#00000014] bg-global-7 p-2 sm:p-3 md:p-4 lg:p-[8px]">
                   <div className="relative w-full bg-global-7">
                     <Image 
                       src={factories[5].image} 
@@ -314,7 +318,7 @@ const FactoriesSection = () => {
                       </span>
                     </Button>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

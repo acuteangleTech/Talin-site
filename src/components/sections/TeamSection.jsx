@@ -29,18 +29,20 @@ const TeamSection = () => {
 
   return (
     <section className="w-full bg-global-1">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container-standard">
         <div className="flex flex-col lg:flex-row justify-center items-start">
           <div className="flex flex-col justify-start items-start w-full lg:w-[32%] bg-global-1 py-8 sm:py-10 md:py-12 lg:py-[36px] lg:px-0 mt-6 sm:mt-7 md:mt-8 lg:mt-[28px]">
-            <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-[18px] justify-start items-start w-full">
+            <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-[18px] justify-start items-start w-full text-container-sm">
               <h2 className="text-[32px] sm:text-[38px] md:text-[42px] lg:text-[48px] font-manrope font-medium leading-[44px] sm:leading-[52px] md:leading-[58px] lg:leading-[66px] text-left bg-gradient-to-r from-[#999999] to-white bg-clip-text text-transparent">
                 Meet the Team
               </h2>
-              <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[24px] text-left text-global-7 w-full lg:w-[92%] mb-2 sm:mb-3 md:mb-4 lg:mb-[10px]">
-                The company's leadership team consists of a group of highly skilled professionals in programming, development, marketing, and business management, with extensive experience in local and international markets. The team works as one to achieve the company's vision of providing innovative digital solutions that support client growth and business development.
-                The leaders set clear strategies and effective execution plans to ensure performance quality and sustainable success.
-                With their high competence and continuous commitment, they drive the company toward leadership in the software and electronic applications industry.
-              </p>
+              <div className="w-full text-balanced">
+                <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[24px] text-justify text-global-7 w-full mb-2 sm:mb-3 md:mb-4 lg:mb-[10px]">
+                  The company's leadership team consists of a group of highly skilled professionals in programming, development, marketing, and business management, with extensive experience in local and international markets. The team works as one to achieve the company's vision of providing innovative digital solutions that support client growth and business development.
+                  The leaders set clear strategies and effective execution plans to ensure performance quality and sustainable success.
+                  With their high competence and continuous commitment, they drive the company toward leadership in the software and electronic applications industry.
+                </p>
+              </div>
             </div>
           </div>
           <div className="flex flex-col justify-center items-center self-center w-full lg:w-[60%] bg-global-1 py-12 sm:py-14 md:py-16 lg:py-[64px] px-6 sm:px-8 md:px-10 lg:px-[36px]">
@@ -64,9 +66,13 @@ const TeamSection = () => {
                       </p>
                     </div>
                   </div>
-                  <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[24px] text-left text-global-7 w-full lg:w-[56%]">
-                    {member.description}
-                  </p>
+                  <div className="w-full lg:w-[56%] text-container-sm">
+                    <div className="w-full text-balanced">
+                      <p className="text-[14px] sm:text-[15px] md:text-[16px] lg:text-[16px] font-manrope font-medium leading-[20px] sm:leading-[22px] md:leading-[24px] lg:leading-[24px] text-justify text-global-7">
+                        {member.description}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>

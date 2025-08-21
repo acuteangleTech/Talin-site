@@ -254,7 +254,7 @@ const FactoriesSection = () => {
               {/* Second Row */}
               <div className="flex flex-col lg:flex-row justify-between items-start w-full gap-6 lg:gap-8">
                 {/* Ozone Factory */}
-                <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[14px] justify-start items-center w-full lg:w-[50%] shadow-[5px_10px_60px_#00000014] bg-global-7 p-2 sm:p-3 md:p-4 lg:p-[10px] mb-32 sm:mb-36 md:mb-40 lg:mb-[190px]">
+                {/* <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[14px] justify-start items-center w-full lg:w-[50%] shadow-[5px_10px_60px_#00000014] bg-global-7 p-2 sm:p-3 md:p-4 lg:p-[10px] mb-32 sm:mb-36 md:mb-40 lg:mb-[190px]">
                   <div className="relative w-full bg-global-7">
                     <Image 
                       src={factories[4].image} 
@@ -285,7 +285,7 @@ const FactoriesSection = () => {
                       </span>
                     </Button>
                   </div>
-                </div>
+                </div> */}
                 {/* Profile Factory */}
                 {/* <div className="flex flex-col gap-3 sm:gap-4 md:gap-5 lg:gap-[14px] justify-center items-center self-end w-full sm:w-2/3 md:w-1/2 lg:w-[32%] shadow-[5px_10px_60px_#00000014] bg-global-7 p-2 sm:p-3 md:p-4 lg:p-[8px]">
                   <div className="relative w-full bg-global-7">

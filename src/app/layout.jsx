@@ -1,4 +1,5 @@
 import '../styles/index.css';
+import WhatsAppIcon from '@/components/common/WhatsAppIcon';
 
 export const viewport = {
   width: 'device-width',
@@ -21,8 +22,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}<script type="module" ></script>
-</body>
+      <body>
+        {children}
+        <WhatsAppIcon />
+        <script type="module" ></script>
+      </body>
     </html>
   );
 }

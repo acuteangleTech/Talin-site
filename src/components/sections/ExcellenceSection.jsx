@@ -10,17 +10,12 @@ const ExcellenceSection = () => {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli"
     },
     {
-      number: "26",
+      number: "50+",
       title: "Projects completed",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli"
     },
     {
-      number: "30",
-      title: "Lorem ipsum",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli"
-    },
-    {
-      number: "100%",
+      number: "97%",
       title: "Client satisfaction",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli"
     }

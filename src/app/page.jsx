@@ -11,6 +11,7 @@ import CompaniesSection from '@/components/sections/CompaniesSection';
 import FactoriesSection from '@/components/sections/FactoriesSection';
 import GallerySection from '@/components/sections/GallerySection';
 import CTASection from '@/components/sections/CTASection';
+import TalinGlobalSection from '@/components/sections/TalinGlobalSection';
 import Footer from '@/components/sections/Footer';
 
 const HomePage = () => {
@@ -19,9 +20,10 @@ const HomePage = () => {
       <div className="relative">
         <Header />
         <HeroSection />
+        <TalinGlobalSection />
       </div>
       <main className="bg-global-1">
-        <AboutSection />
+        {/* <AboutSection /> */}
         <LeadershipSection />
         <ExcellenceSection />
         <TeamSection />

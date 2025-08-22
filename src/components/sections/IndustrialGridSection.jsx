@@ -2,59 +2,86 @@ import React from 'react';
 
 const IndustrialGridSection = () => {
   const industrialImages = [
+    // Mineral Water Factories Images
     {
       id: 1,
-      src: '/images/img_workspace.png',
-      alt: 'Industrial workspace and manufacturing facility',
-      title: 'Industrial Processing Equipment'
+      src: '/mineral water factories/WhatsApp Image 2025-08-16 at 10.59.20 PM (2).jpeg',
+      alt: 'Mineral Water Factory Operations',
+      title: 'Mineral Water Factory'
     },
     {
       id: 2,
-      src: '/images/img_frame_40.png',
-      alt: 'Advanced manufacturing and production line',
-      title: 'Injection Molding Technology'
+      src: '/mineral water factories/WhatsApp Image 2025-08-16 at 10.59.20 PM (1).jpeg',
+      alt: 'Mineral Water Production Line',
+      title: 'Water Production Facility'
     },
     {
       id: 3,
-      src: '/images/img_frame_40_1.png',
-      alt: 'Industrial storage and container solutions',
-      title: 'Industrial Storage Solutions'
+      src: '/mineral water factories/WhatsApp Image 2025-08-16 at 10.59.20 PM.jpeg',
+      alt: 'Mineral Water Manufacturing',
+      title: 'Water Manufacturing Plant'
     },
+    // Tanks Factories Images
     {
       id: 4,
-      src: '/images/img_frame_40_354x288.png',
-      alt: 'Advanced processing facility with modern equipment',
-      title: 'Advanced Processing Facility'
+      src: '/Tanks factories/WhatsApp Image 2025-08-16 at 10.59.59 PM.jpeg',
+      alt: 'Tanks Factory Operations',
+      title: 'Tanks Manufacturing'
     },
     {
       id: 5,
-      src: '/images/img_frame_13_1.png',
-      alt: 'Quality control and production monitoring',
-      title: 'Quality Control Process'
+      src: '/Tanks factories/WhatsApp Image 2025-08-16 at 10.59.58 PM (2).jpeg',
+      alt: 'Tanks Production Line',
+      title: 'Tanks Production Facility'
     },
     {
       id: 6,
-      src: '/images/img_rectangle_11.png',
-      alt: 'Rotational molding and manufacturing equipment',
-      title: 'Rotational Molding Equipment'
+      src: '/Tanks factories/WhatsApp Image 2025-08-16 at 10.59.58 PM (1).jpeg',
+      alt: 'Tanks Manufacturing Process',
+      title: 'Tanks Manufacturing Process'
     },
     {
       id: 7,
-      src: '/images/img_room.png',
-      alt: 'Manufacturing operations and production floor',
-      title: 'Manufacturing Operations'
+      src: '/Tanks factories/WhatsApp Image 2025-08-16 at 10.59.58 PM.jpeg',
+      alt: 'Tanks Factory Equipment',
+      title: 'Tanks Factory Equipment'
     },
     {
       id: 8,
-      src: '/images/img_room_306x520.png',
-      alt: 'Construction material production and processing',
-      title: 'Construction Material Production'
+      src: '/Tanks factories/WhatsApp Image 2025-08-16 at 10.59.57 PM.jpeg',
+      alt: 'Tanks Production Operations',
+      title: 'Tanks Production Operations'
     },
+    // Real Estate Images
     {
       id: 9,
-      src: '/images/img_garden.png',
-      alt: 'Infrastructure development and project management',
-      title: 'Infrastructure Development'
+      src: '/real state/WhatsApp Image 2025-08-16 at 11.01.59 PM.jpeg',
+      alt: 'Real Estate Development',
+      title: 'Real Estate Projects'
+    },
+    {
+      id: 10,
+      src: '/real state/WhatsApp Image 2025-08-16 at 11.01.58 PM (1).jpeg',
+      alt: 'Real Estate Construction',
+      title: 'Real Estate Construction'
+    },
+    {
+      id: 11,
+      src: '/real state/WhatsApp Image 2025-08-16 at 11.01.58 PM.jpeg',
+      alt: 'Real Estate Development Site',
+      title: 'Real Estate Development Site'
+    },
+    {
+      id: 12,
+      src: '/real state/WhatsApp Image 2025-08-16 at 11.01.57 PM (1).jpeg',
+      alt: 'Real Estate Infrastructure',
+      title: 'Real Estate Infrastructure'
+    },
+    {
+      id: 13,
+      src: '/real state/WhatsApp Image 2025-08-16 at 11.01.57 PM.jpeg',
+      alt: 'Real Estate Project Management',
+      title: 'Real Estate Project Management'
     }
   ];
 

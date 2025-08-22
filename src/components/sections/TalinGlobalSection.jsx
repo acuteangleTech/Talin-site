@@ -6,36 +6,99 @@ const TalinGlobalSection = () => {
   const carouselRef = useRef(null);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
 
-  // Images representing Talin Global Group's diverse operations
+  // All images from the home folder representing Talin Global Group's diverse operations
   const carouselImages = [
     {
-      src: "/images/img_f48408c8_d809_4e45_8_jpg_webp.png", // Industrial machinery - blue and white hopper/conveyor
-      alt: "Industrial Manufacturing & Recycling Operations",
-      category: "Manufacturing"
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.07 PM (1).jpeg",
+      alt: "Talin Global Group Operations",
     },
     {
-      src: "/images/img_workspace.png", // Food production line with biscuits
-      alt: "Food Production & Processing",
-      category: "Food Production"
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.07 PM.jpeg",
+      alt: "Talin Global Group Operations",
     },
     {
-      src: "/images/img_room.png", // Modern house with flat roof and grey fence
-      alt: "Real Estate Development",
-      category: "Real Estate"
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.06 PM (2).jpeg",
+      alt: "Talin Global Group Operations",
     },
     {
-      src: "/images/img_frame_40.png", // Construction equipment - black and yellow machinery
-      alt: "Construction & Industrial Solutions",
-      category: "Construction"
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.06 PM (1).jpeg",
+      alt: "Talin Global Group Operations",
     },
     {
-      src: "/images/img_garden.png", // Lighthouse with pier/causeway
-      alt: "Infrastructure & Trading",
-      category: "Infrastructure"
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.06 PM.jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.05 PM (2).jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.05 PM (1).jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.05 PM.jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.04 PM (1).jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.04 PM.jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.02 PM (1).jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.02 PM.jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.00 PM (1).jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.03.00 PM.jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.02.59 PM (2).jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.02.59 PM (1).jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.02.59 PM.jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.02.58 PM (1).jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.02.58 PM.jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.02.57 PM.jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.02.56 PM (1).jpeg",
+      alt: "Talin Global Group Operations",
+    },
+    {
+      src: "/home/WhatsApp Image 2025-08-16 at 11.02.56 PM.jpeg",
+      alt: "Talin Global Group Operations",
     }
   ];
 
-  // Auto-scroll functionality
+  // Auto-scroll functionality with improved performance for more images
   useEffect(() => {
     if (!isAutoScrolling) return;
 
@@ -59,7 +122,7 @@ const TalinGlobalSection = () => {
           });
         }
       }
-    }, 4000); // Scroll every 4 seconds
+    }, 3000); // Reduced to 3 seconds for better engagement with more images
 
     return () => clearInterval(interval);
   }, [isAutoScrolling]);
@@ -76,7 +139,7 @@ const TalinGlobalSection = () => {
     <section id="talin-global" className="w-full bg-black min-h-screen flex flex-col justify-center section-padding relative">
       <div className="container-standard relative z-10">
         
-        {/* Image Carousel Section - Now takes more space */}
+        {/* Image Carousel Section - Enhanced for more images */}
         <div className="mb-12 sm:mb-16 md:mb-20 lg:mb-24">
           <div 
             ref={carouselRef}
@@ -103,11 +166,9 @@ const TalinGlobalSection = () => {
                   {/* Subtle overlay effect */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-40 transition-opacity duration-500" />
                   
-                  {/* Category label - positioned at bottom */}
-                  <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
-                    <span className="text-white text-sm sm:text-base font-medium tracking-wide">
-                      {image.category}
-                    </span>
+                  {/* Image counter indicator */}
+                  <div className="absolute top-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {index + 1}/{carouselImages.length}
                   </div>
                 </div>
               </div>

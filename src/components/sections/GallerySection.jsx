@@ -26,18 +26,13 @@ const GallerySection = () => {
       "/images/img_bathroom.png"
     ],
     Events: [
-      "/images/img_rear_view_of_black.png",
-      "/images/img_black_man.png",
-      "/images/img_man_in_the_street.png",
-      "/images/img_workspace.png",
-      "/images/img_room.png",
-      "/images/img_garden.png",
-      "/images/img_f48408c8_d809_4e45_8_jpg_webp.png",
-      "/images/img_frame_40.png",
-      "/images/img_bathroom.png",
-      "/images/img_rectangle_11.png",
-      "/images/img_frame_13_1.png",
-      "/images/img_8023860372_1.png"
+      "/events/WhatsApp Image 2025-08-16 at 11.46.48 PM.jpeg",
+      "/events/WhatsApp Image 2025-08-16 at 11.46.47 PM (2).jpeg",
+      "/events/WhatsApp Image 2025-08-16 at 11.46.47 PM (1).jpeg",
+      "/events/WhatsApp Image 2025-08-16 at 11.46.47 PM.jpeg",
+      "/events/WhatsApp Image 2025-08-16 at 11.45.31 PM (1).jpeg",
+      "/events/WhatsApp Image 2025-08-16 at 11.45.31 PM.jpeg",
+      "/events/WhatsApp Image 2025-08-16 at 11.45.03 PM.jpeg"
     ],
     Products: [
       "/images/img_bathroom.png",

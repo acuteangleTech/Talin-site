@@ -12,18 +12,11 @@ const GallerySection = () => {
   // Gallery images organized by category - using available images that match construction/industrial theme
   const galleryData = {
     Projects: [
-      "/images/img_f48408c8_d809_4e45_8_jpg_webp.png",
-      "/images/img_f48408c8_d809_4e45_8_jpg_webp_1.png", 
-      "/images/img_f48408c8_d809_4e45_8_jpg_webp_2.png",
-      "/images/img_frame_40.png",
-      "/images/img_frame_40_1.png",
-      "/images/img_workspace.png",
-      "/images/img_rear_view_of_black.png",
-      "/images/img_black_man.png",
-      "/images/img_man_in_the_street.png",
-      "/images/img_room.png",
-      "/images/img_garden.png",
-      "/images/img_bathroom.png"
+      "/real state/WhatsApp Image 2025-08-16 at 11.01.59 PM.jpeg",
+      "/real state/WhatsApp Image 2025-08-16 at 11.01.58 PM (1).jpeg",
+      "/real state/WhatsApp Image 2025-08-16 at 11.01.58 PM.jpeg",
+      "/real state/WhatsApp Image 2025-08-16 at 11.01.57 PM (1).jpeg",
+      "/real state/WhatsApp Image 2025-08-16 at 11.01.57 PM.jpeg"
     ],
     Events: [
       "/events/WhatsApp Image 2025-08-16 at 11.46.48 PM.jpeg",
@@ -35,18 +28,35 @@ const GallerySection = () => {
       "/events/WhatsApp Image 2025-08-16 at 11.45.03 PM.jpeg"
     ],
     Products: [
-      "/images/img_bathroom.png",
-      "/images/img_room.png",
-      "/images/img_garden.png",
-      "/images/img_workspace.png",
-      "/images/img_frame_13_1.png",
-      "/images/img_rectangle_11.png",
-      "/images/img_f48408c8_d809_4e45_8_jpg_webp.png",
-      "/images/img_frame_40.png",
-      "/images/img_rear_view_of_black.png",
-      "/images/img_black_man.png",
-      "/images/img_man_in_the_street.png",
-      "/images/img_8023860372_1.png"
+      // Automatic and semi automatic blowing machines
+      "/Automatic and semi automatic blowing machines/WhatsApp Image 2025-08-16 at 11.41.20 PM (1).jpeg",
+      "/Automatic and semi automatic blowing machines/WhatsApp Image 2025-08-16 at 11.41.20 PM.jpeg",
+      "/Automatic and semi automatic blowing machines/WhatsApp Image 2025-08-16 at 11.41.19 PM (2).jpeg",
+      "/Automatic and semi automatic blowing machines/WhatsApp Image 2025-08-16 at 11.41.19 PM (1).jpeg",
+      "/Automatic and semi automatic blowing machines/WhatsApp Image 2025-08-16 at 11.41.19 PM.jpeg",
+      
+      // Biscuits machines line
+      "/Biscuits machines line/WhatsApp Image 2025-08-16 at 11.42.10 PM (2).jpeg",
+      "/Biscuits machines line/WhatsApp Image 2025-08-16 at 11.42.10 PM (1).jpeg",
+      "/Biscuits machines line/WhatsApp Image 2025-08-16 at 11.42.10 PM.jpeg",
+      "/Biscuits machines line/WhatsApp Image 2025-08-16 at 11.42.09 PM.jpeg",
+      
+      // Blocks making machines
+      "/Blocks making machines/WhatsApp Image 2025-08-16 at 11.41.41 PM.jpeg",
+      "/Blocks making machines/WhatsApp Image 2025-08-16 at 11.41.40 PM (1).jpeg",
+      "/Blocks making machines/WhatsApp Image 2025-08-16 at 11.41.40 PM.jpeg",
+      "/Blocks making machines/WhatsApp Image 2025-08-16 at 11.41.39 PM.jpeg",
+      
+      // Papers machines
+      "/papers machines/WhatsApp Image 2025-08-16 at 11.04.48 PM.jpeg",
+      "/papers machines/WhatsApp Image 2025-08-16 at 11.04.47 PM (1).jpeg",
+      "/papers machines/WhatsApp Image 2025-08-16 at 11.04.47 PM.jpeg",
+      
+      // Utopia machines
+      "/Utopia machines/WhatsApp Image 2025-08-16 at 11.00.53 PM.jpeg",
+      "/Utopia machines/WhatsApp Image 2025-08-16 at 11.00.52 PM (1).jpeg",
+      "/Utopia machines/WhatsApp Image 2025-08-16 at 11.00.52 PM.jpeg",
+      "/Utopia machines/WhatsApp Image 2025-08-16 at 11.00.51 PM.jpeg"
     ]
   };
 

@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 import Header from '@/components/common/Header';
+import CompanyHeaderSection from '@/components/sections/CompanyHeaderSection';
+import CosmeticsGridSection from '@/components/sections/CosmeticsGridSection';
 import Footer from '@/components/sections/Footer';
 
 const HollywoodCosmeticsPage = () => {
@@ -10,16 +12,23 @@ const HollywoodCosmeticsPage = () => {
         <Header />
       </div>
       <main className="bg-global-1">
-        <section className="py-20 px-4">
-          <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-8">
-              Hollywood Cosmetics
-            </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Beauty and personal care products. This page is under development.
-            </p>
+        <section className="pt-32 py-20 px-4">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start lg:items-center">
+              <div className="w-full lg:w-1/2">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-left whitespace-nowrap bg-gradient-to-r from-[#979797] to-[#333333] bg-clip-text text-transparent">
+                  Hollywood Cosmetics
+                </h1>
+              </div>
+              <div className="w-full lg:w-1/2">
+                <p className="text-xl text-gray-300 text-left lg:text-right">
+                  Beauty and personal care products. This page is under development.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
+        <CosmeticsGridSection />
         <Footer />
       </main>
     </div>

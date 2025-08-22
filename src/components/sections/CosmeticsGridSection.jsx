@@ -19,6 +19,42 @@ const CosmeticsGridSection = () => {
       src: '/cosmetics hollywood/WhatsApp Image 2025-08-16 at 6.54.16 PM.jpeg',
       alt: 'Hollywood Cosmetics Operations',
       title: 'Cosmetics Operations'
+    },
+    {
+      id: 4,
+      src: '/profile factory/WhatsApp Image 2025-08-16 at 11.43.06 PM (2).jpeg',
+      alt: 'Profile Factory Operations',
+      title: 'Profile Factory'
+    },
+    {
+      id: 5,
+      src: '/profile factory/WhatsApp Image 2025-08-16 at 11.43.06 PM (1).jpeg',
+      alt: 'Profile Factory Production',
+      title: 'Profile Factory Production'
+    },
+    {
+      id: 6,
+      src: '/profile factory/WhatsApp Image 2025-08-16 at 11.43.06 PM.jpeg',
+      alt: 'Profile Factory Manufacturing',
+      title: 'Profile Factory Manufacturing'
+    },
+    {
+      id: 7,
+      src: '/profile factory/WhatsApp Image 2025-08-16 at 10.58.54 PM.jpeg',
+      alt: 'Profile Factory Operations',
+      title: 'Profile Factory Operations'
+    },
+    {
+      id: 8,
+      src: '/profile factory/WhatsApp Image 2025-08-16 at 10.58.53 PM (1).jpeg',
+      alt: 'Profile Factory Production Line',
+      title: 'Profile Factory Production Line'
+    },
+    {
+      id: 9,
+      src: '/profile factory/WhatsApp Image 2025-08-16 at 10.58.53 PM.jpeg',
+      alt: 'Profile Factory Manufacturing',
+      title: 'Profile Factory Manufacturing'
     }
   ];
 

@@ -22,7 +22,7 @@ const HollywoodCosmeticsPage = () => {
               </div>
               <div className="w-full lg:w-1/2">
                 <p className="text-xl text-gray-300 text-left lg:text-right">
-                  Beauty and personal care products. This page is under development.
+                Manufactures and imports international brands such as L’Oréal, MAC, Maybelline, and Max Factor. Distributes through wholesale networks, pharmacies, and retail stores, supported by a team of 50,000+ sales representatives.
                 </p>
               </div>
             </div>

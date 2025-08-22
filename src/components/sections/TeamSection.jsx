@@ -18,13 +18,13 @@ const TeamSection = () => {
       image: "/images/img_frame_40_354x288.png",
       description: "Is responsible for developing and implementing marketing strategies, managing sales operations, and building client relationships to enhance market share and achieve growth objectives."
     },
-    {
-      id: 3,
-      name: "Afsal E Muhammed",
-      position: "Technical Lead",
-      image: "/images/img_frame_40_1.png",
-      description: "The leader of the programming, development, and electronic applications team is responsible for setting visions and integrated digital solutions. Their role is to transform ideas into smart products, enhance user experience, and support business growth."
-    }
+    // {
+    //   id: 3,
+    //   name: "Afsal E Muhammed",
+    //   position: "Technical Lead",
+    //   image: "/images/img_frame_40_1.png",
+    //   description: "The leader of the programming, development, and electronic applications team is responsible for setting visions and integrated digital solutions. Their role is to transform ideas into smart products, enhance user experience, and support business growth."
+    // }
   ];
 
   return (

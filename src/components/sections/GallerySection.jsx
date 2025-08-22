@@ -2,12 +2,14 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Button from '@/components/ui/Button';
+import { useRouter } from 'next/navigation';
 
 const GallerySection = () => {
   const [activeTab, setActiveTab] = useState('Projects');
   const [isPaused, setIsPaused] = useState(false);
   const carouselRef = useRef(null);
   const intervalRef = useRef(null);
+  const router = useRouter();
 
   // Gallery images organized by category - using available images that match construction/industrial theme
   const galleryData = {
@@ -127,12 +129,12 @@ const GallerySection = () => {
           </div>
 
           {/* Tab Navigation */}
-          <div className="flex justify-center gap-12 lg:gap-20 mb-12 lg:mb-16">
+          <div className="flex flex-wrap justify-center gap-6 sm:gap-8 lg:gap-20 mb-8 lg:mb-16 px-4">
             {['Projects', 'Events', 'Products'].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`text-lg lg:text-xl font-medium transition-colors duration-300 ${
+                className={`text-base sm:text-lg lg:text-xl font-medium transition-colors duration-300 whitespace-nowrap ${
                   activeTab === tab 
                     ? 'text-white' 
                     : 'text-gray-500 hover:text-gray-300'
@@ -207,10 +209,10 @@ const GallerySection = () => {
             variant="primary"
             size="lg"
             className="w-auto"
-            onClick={() => console.log(`View all ${activeTab.toLowerCase()}`)}
+            onClick={() => router.push('/gallery')}
           >
             <span className="text-sm lg:text-base font-medium">
-              View All gallery
+              View All Gallery
             </span>
           </Button>
         </div>

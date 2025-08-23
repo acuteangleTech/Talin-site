@@ -7,7 +7,7 @@ const CompanyHeaderSection = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Company Name */}
           <div className="text-center md:text-left">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight bg-gradient-to-r from-[#666666] to-black bg-clip-text text-transparent whitespace-nowrap overflow-hidden">
+            <h1 className="text-5xl md:text-6xl lg:text-5xl font-bold leading-tight bg-gradient-to-r from-[#666666] to-[#333333] bg-clip-text text-transparent whitespace-nowrap overflow-hidden">
               Talin International
             </h1>
           </div>

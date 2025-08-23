@@ -122,7 +122,7 @@ const GalleryPage = () => {
           <div className="max-w-7xl mx-auto">
             {/* Tab Navigation */}
             <div className="flex flex-wrap justify-center gap-3 sm:gap-6 lg:gap-8 mb-8 lg:mb-16 px-4">
-              {['All', 'Projects', 'Events', 'Products'].map((tab) => (
+              {['All',  'Events', 'Projects','Products'].map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}

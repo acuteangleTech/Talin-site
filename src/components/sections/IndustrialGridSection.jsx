@@ -22,24 +22,24 @@ const IndustrialGridSection = () => {
       title: 'Water Manufacturing Plant'
     },
     // Tanks Factories Images
-    {
-      id: 4,
-      src: '/Tanks factories/WhatsApp Image 2025-08-16 at 10.59.59 PM.jpeg',
-      alt: 'Tanks Factory Operations',
-      title: 'Tanks Manufacturing'
-    },
-    {
-      id: 5,
-      src: '/Tanks factories/WhatsApp Image 2025-08-16 at 10.59.58 PM (2).jpeg',
-      alt: 'Tanks Production Line',
-      title: 'Tanks Production Facility'
-    },
-    {
-      id: 6,
-      src: '/Tanks factories/WhatsApp Image 2025-08-16 at 10.59.58 PM (1).jpeg',
-      alt: 'Tanks Manufacturing Process',
-      title: 'Tanks Manufacturing Process'
-    },
+    // {
+    //   id: 4,
+    //   src: '/Tanks factories/WhatsApp Image 2025-08-16 at 10.59.59 PM.jpeg',
+    //   alt: 'Tanks Factory Operations',
+    //   title: 'Tanks Manufacturing'
+    // },
+    // {
+    //   id: 5,
+    //   src: '/Tanks factories/WhatsApp Image 2025-08-16 at 10.59.58 PM (2).jpeg',
+    //   alt: 'Tanks Production Line',
+    //   title: 'Tanks Production Facility'
+    // },
+    // {
+    //   id: 6,
+    //   src: '/Tanks factories/WhatsApp Image 2025-08-16 at 10.59.58 PM (1).jpeg',
+    //   alt: 'Tanks Manufacturing Process',
+    //   title: 'Tanks Manufacturing Process'
+    // },
     {
       id: 7,
       src: '/Tanks factories/WhatsApp Image 2025-08-16 at 10.59.58 PM.jpeg',
@@ -71,18 +71,18 @@ const IndustrialGridSection = () => {
       alt: 'Real Estate Development Site',
       title: 'Real Estate Development Site'
     },
-    {
-      id: 12,
-      src: '/real state/WhatsApp Image 2025-08-16 at 11.01.57 PM (1).jpeg',
-      alt: 'Real Estate Infrastructure',
-      title: 'Real Estate Infrastructure'
-    },
-    {
-      id: 13,
-      src: '/real state/WhatsApp Image 2025-08-16 at 11.01.57 PM.jpeg',
-      alt: 'Real Estate Project Management',
-      title: 'Real Estate Project Management'
-    }
+    // {
+    //   id: 12,
+    //   src: '/real state/WhatsApp Image 2025-08-16 at 11.01.57 PM (1).jpeg',
+    //   alt: 'Real Estate Infrastructure',
+    //   title: 'Real Estate Infrastructure'
+    // },
+    // {
+    //   id: 13,
+    //   src: '/real state/WhatsApp Image 2025-08-16 at 11.01.57 PM.jpeg',
+    //   alt: 'Real Estate Project Management',
+    //   title: 'Real Estate Project Management'
+    // }
   ];
 
   return (

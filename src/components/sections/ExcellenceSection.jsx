@@ -7,17 +7,17 @@ const ExcellenceSection = () => {
     {
       number: "8",
       title: "Years experience",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli"
+      description: "Building strategic partnerships and driving innovation across multiple industries since our founding"
     },
     {
       number: "50+",
       title: "Projects completed",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli"
+      description: "Successfully delivered factories, real estate developments, and manufacturing facilities across the region"
     },
     {
       number: "97%",
       title: "Client satisfaction",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing eli"
+      description: "Maintaining exceptional quality standards in all our operations and customer relationships"
     }
   ];
 

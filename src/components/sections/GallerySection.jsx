@@ -130,7 +130,7 @@ const GallerySection = () => {
 
           {/* Tab Navigation */}
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8 lg:gap-20 mb-8 lg:mb-16 px-4">
-            {['Projects', 'Events', 'Products'].map((tab) => (
+            {[ 'Events','Projects', 'Products'].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}

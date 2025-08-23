@@ -9,37 +9,36 @@ const FactoriesSection = () => {
       name: "Dancon (beverages)",
       description: "For manufacturing and bottling essential food products to meet local and regional market demands.",
       image: "/images/img_room.png",
-      year: "2025"
+   
     },
     {
       name: "Recycle Factory (plastic recycling)",
       description: "Focused on plastic recycling, supporting sustainability and environmental protection.",
       image: "/images/img_garden.png",
-      year: "2024"
+ 
     },
     {
       name: "Relax Factory (paper products, hygiene)",
       description: "Produces paper tissues, baby diapers, and feminine hygiene products according to strict health standards.",
       image: "/images/img_room_306x520.png",
-      year: "2025"
     },
     {
       name: "Tancka (water tanks)",
       description: "Specialized in manufacturing water tanks, ensuring high-quality water storage solutions.",
       image: "/images/img_bathroom.png",
-      year: "2022"
+    
     },
     {
       name: "Ozone Factory",
       description: "Specialized in bottling mineral water, juices, and vinegar with the highest quality standards.",
       image: "/images/img_room.png",
-      year: "2025"
+     
     },
     {
       name: "Profile",
       description: "for manufacturing perfumes and cosmetics according to the highest international quality standard",
       image: "/images/img_garden_240x408.png",
-      year: "2024"
+      
     }
   ];
 
@@ -95,16 +94,7 @@ const FactoriesSection = () => {
                             {factory.description}
                           </p>
                         </div>
-                        <Button 
-                          variant="secondary"
-                          size="xs"
-                          className="w-auto"
-                          onClick={() => {}}
-                        >
-                          <span className="text-[12px] font-manrope font-normal leading-[16px] text-left">
-                            {factory.year}
-                          </span>
-                        </Button>
+                     
                       </div>
                     </div>
                   ))}
@@ -135,16 +125,7 @@ const FactoriesSection = () => {
                           {factories[0].description}
                         </p>
                       </div>
-                      <Button 
-                        variant="secondary"
-                        size="xs"
-                        className="w-auto"
-                        onClick={() => {}}
-                      >
-                        <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-manrope font-normal leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] text-left">
-                          {factories[0].year}
-                        </span>
-                      </Button>
+                  
                     </div>
                   </div>
                   {/* Relax Factory */}
@@ -168,16 +149,6 @@ const FactoriesSection = () => {
                           {factories[2].description}
                         </p>
                       </div>
-                      <Button 
-                        variant="secondary"
-                        size="xs"
-                        className="w-auto"
-                        onClick={() => {}}
-                      >
-                        <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-manrope font-normal leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] text-left">
-                          {factories[2].year}
-                        </span>
-                      </Button>
                     </div>
                   </div>
                 </div>
@@ -204,7 +175,7 @@ const FactoriesSection = () => {
                           {factories[1].description}
                         </p>
                       </div>
-                      <Button 
+                      {/* <Button 
                         variant="secondary"
                         size="xs"
                         className="w-auto"
@@ -213,7 +184,7 @@ const FactoriesSection = () => {
                         <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-inter font-normal leading-[14px] sm:leading-[15px] md:leading-[16px] lg:leading-[16px] text-left">
                           {factories[1].year}
                         </span>
-                      </Button>
+                      </Button> */}
                     </div>
                   </div>
                   {/* Tancka Factory */}
@@ -237,16 +208,7 @@ const FactoriesSection = () => {
                           {factories[3].description}
                         </p>
                       </div>
-                      <Button 
-                        variant="secondary"
-                        size="xs"
-                        className="w-auto"
-                        onClick={() => {}}
-                      >
-                        <span className="text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-manrope font-normal leading-[16px] sm:leading-[17px] md:leading-[18px] lg:leading-[18px] text-left">
-                          {factories[3].year}
-                        </span>
-                      </Button>
+                   
                     </div>
                   </div>
                 </div>

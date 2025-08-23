@@ -181,7 +181,7 @@ const TalinGlobalSection = () => {
           <div className="text-left sm:text-center">
             <div className="w-full text-balanced">
               <p className="text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl leading-loose sm:leading-[2.2] md:leading-[2.4] lg:leading-[2.6] font-light tracking-wide text-justify">
-                Talin Global Group is a diversified conglomerate with operations spanning real estate, 
+                <span className="font-bold text-white">Talin Global Group</span> is a diversified conglomerate with operations spanning real estate, 
                 manufacturing, cosmetics, trading, and industrial solutions. Our mission is to create 
                 sustainable value by combining local expertise with international innovation. Through 
                 strategic partnerships with public and private sectors, we deliver high-quality products 

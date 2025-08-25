@@ -75,11 +75,11 @@ const SectorsSection = () => {
   ];
 
   return (
-    <section className="bg-global-1 pt-28 pb-16 px-4">
+    <section className="bg-global-1 pt-20 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="mb-16 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-[#666666] to-black bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-[#666666] to-[#333333] bg-clip-text text-transparent">
             Our Business Sectors
           </h2>
           <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">

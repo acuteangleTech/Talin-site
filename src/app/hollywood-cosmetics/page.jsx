@@ -13,11 +13,11 @@ const HollywoodCosmeticsPage = () => {
         <Header />
       </div>
       <main className="bg-global-1">
-        <section className="pt-32 py-20 px-4">
+        <section className="pt-32  px-4">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start lg:items-center">
               <div className="w-full lg:w-1/2">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-left whitespace-nowrap bg-gradient-to-r from-[#979797] to-[#333333] bg-clip-text text-transparent">
+                <h1 className="text-3xl md:text-3xl lg:text-5xl font-bold leading-tight text-left whitespace-nowrap bg-gradient-to-r from-[#979797] to-[#333333] bg-clip-text text-transparent">
                   Hollywood Cosmetics
                 </h1>
               </div>

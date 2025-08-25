@@ -13,7 +13,7 @@ const TeamSection = () => {
     },
     {
       id: 2,
-      name: "Dr. Asaad Eltoum,",
+      name: "Mohammed Almortada",
       position: "Marketing and Sales Manager",
       image: "/images/img_frame_40_354x288.png",
       description: "Is responsible for developing and implementing marketing strategies, managing sales operations, and building client relationships to enhance market share and achieve growth objectives."

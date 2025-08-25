@@ -73,27 +73,27 @@ const TalinGlobalSection = () => {
       alt: "Talin Global Group Operations",
     },
     {
-      src: "/home/WhatsApp Image 2025-08-16 at 11.02.59 PM.jpeg",
+      src: "/Home/WhatsApp Image 2025-08-16 at 11.02.59 PM.jpeg",
       alt: "Talin Global Group Operations",
     },
     {
-      src: "/home/WhatsApp Image 2025-08-16 at 11.02.58 PM (1).jpeg",
+      src: "/Home/WhatsApp Image 2025-08-16 at 11.02.58 PM (1).jpeg",
       alt: "Talin Global Group Operations",
     },
     {
-      src: "/home/WhatsApp Image 2025-08-16 at 11.02.58 PM.jpeg",
+      src: "/Home/WhatsApp Image 2025-08-16 at 11.02.58 PM.jpeg",
       alt: "Talin Global Group Operations",
     },
     {
-      src: "/home/WhatsApp Image 2025-08-16 at 11.02.57 PM.jpeg",
+      src: "/Home/WhatsApp Image 2025-08-16 at 11.02.57 PM.jpeg",
       alt: "Talin Global Group Operations",
     },
     {
-      src: "/home/WhatsApp Image 2025-08-16 at 11.02.56 PM (1).jpeg",
+      src: "/Home/WhatsApp Image 2025-08-16 at 11.02.56 PM (1).jpeg",
       alt: "Talin Global Group Operations",
     },
     {
-      src: "/home/WhatsApp Image 2025-08-16 at 11.02.56 PM.jpeg",
+      src: "/Home/WhatsApp Image 2025-08-16 at 11.02.56 PM.jpeg",
       alt: "Talin Global Group Operations",
     }
   ];

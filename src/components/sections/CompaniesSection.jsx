@@ -12,28 +12,28 @@ const CompaniesSection = () => {
       image: "/images/img_f48408c8_d809_4e45_8_jpg_webp.png",
       icon: "/images/img_component_2_black_900_02.svg",
       route: "/talin-international",
-      description: "Industrial manufacturing and infrastructure development"
+      description: "أكيد، هذه نسخة مختصرة جدًا باللغة الإنجليزية على شكل نقاط لكل قطاع"
     },
     {
       name: "Utopia Global General Trading",
       image: "/images/img_f48408c8_d809_4e45_8_jpg_webp_150x104.png",
       icon: "/images/img_component_2_black_900_02.svg",
       route: "/utopia-global",
-      description: "International trade and commodity supply"
+      description: "أكيد، هذه نسخة مختصرة جدًا باللغة الإنجليزية للنقاط السابقة"
     },
     {
       name: "Hollywood Cosmetics",
       image: "/images/img_f48408c8_d809_4e45_8_jpg_webp_1.png",
       icon: "/images/img_component_2_blue_gray_900.svg",
       route: "/hollywood-cosmetics",
-      description: "Beauty and personal care products"
+      description: "كيد، هذه نسخة مختصرة جدًا للنقاط السبعة باللغة الإنجليزية"
     },
     {
       name: "Talin Properties",
       image: "/images/img_f48408c8_d809_4e45_8_jpg_webp_2.png",
       icon: "/images/img_component_2_blue_gray_900.svg",
       route: "/talin-properties",
-      description: "Real estate development and management"
+      description: "أكيد، هذه نسخة مختصرة جدًا باللغة الإنجليزية للنقاط السبعة"
     }
   ];
 

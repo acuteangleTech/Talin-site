@@ -15,9 +15,9 @@ const CompanyHeaderSection = () => {
           {/* Company Description */}
           <div className="text-center md:text-left">
             <p className="text-lg md:text-xl text-white leading-relaxed max-w-2xl">
-              Specializes in creating high-value investment opportunities through smart partnering models. 
-              Expertise spans infrastructure, manufacturing, trade, and services, with projects focused on 
-              reconstruction and development of Sudan.
+              Specializes in creating high-value investment opportunities through smart partnering models across 10 key business sectors. 
+              Our expertise spans infrastructure, manufacturing, agriculture, healthcare, technology, and more, with projects focused on 
+              reconstruction and development of Sudan through strategic partnerships and comprehensive agreements.
             </p>
           </div>
         </div>

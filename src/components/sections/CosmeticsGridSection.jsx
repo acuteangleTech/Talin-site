@@ -61,18 +61,38 @@ const CosmeticsGridSection = () => {
   return (
     <section className="bg-global-1 pt-28 pb-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4">
-          {cosmeticsImages.map((image) => (
+        {/* Section Header */}
+        <div className="mb-12 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#979797] to-[#333333] bg-clip-text text-transparent">
+            Our Cosmetics Operations
+          </h2>
+          <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
+            Showcasing our diverse cosmetics manufacturing capabilities, production facilities, and quality control processes.
+          </p>
+        </div>
+
+        {/* Images Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+          {cosmeticsImages.map((image, index) => (
             <div 
               key={image.id} 
-              className=""
+              className="group relative overflow-hidden rounded-xl transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-black/20"
             >
-              <div className="">
+              <div className="relative">
                 <img 
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-48 object-cover rounded"
+                  className="w-full h-48 md:h-56 object-cover rounded-xl transition-all duration-500 group-hover:scale-110"
                 />
+                
+                {/* Overlay with title */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+                  <div className="absolute bottom-0 left-0 right-0 p-4">
+                    <h3 className="text-white font-semibold text-lg">
+                      {image.title}
+                    </h3>
+                  </div>
+                </div>
               </div>
             </div>
           ))}

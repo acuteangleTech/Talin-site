@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Header from '@/components/common/Header';
+import UtopiaSectorsSection from '@/components/sections/UtopiaSectorsSection';
 import Footer from '@/components/sections/Footer';
 
 const UtopiaGlobalPage = () => {
@@ -149,28 +150,52 @@ const UtopiaGlobalPage = () => {
               </div>
               <div className="w-full lg:w-1/2">
                 <p className="text-xl text-gray-300 text-right">
-                  Imports and installs factories and machinery for beverages, food products, recycling, oil, and packaging. Sources from China, Europe, and Asia, offering both new and refurbished solutions with full technical support.
+                  Imports and installs factories and machinery for beverages, food products, recycling, oil, and packaging. 
+                  Our comprehensive business spans 7 key sectors including factory ownership, management, production, R&D, 
+                  marketing, distribution, and partnerships. Sources from China, Europe, and Asia, offering both new and 
+                  refurbished solutions with full technical support.
                 </p>
               </div>
             </div>
           </div>
         </section>
         
+        <UtopiaSectorsSection />
+        
         {/* Utopia Global Images Grid */}
         <section className="bg-global-1 pt-16 pb-16 px-4">
           <div className="max-w-7xl mx-auto">
+            {/* Section Header */}
+            <div className="mb-12 text-center">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#979797] to-[#333333] bg-clip-text text-transparent">
+                Our Industrial Equipment Portfolio
+              </h2>
+              <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
+                Showcasing our diverse range of industrial machinery, production lines, and manufacturing equipment across multiple industries.
+              </p>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
               {utopiaImages.map((image) => (
                 <div 
                   key={image.id} 
-                  className="group cursor-pointer transition-transform duration-300 hover:scale-105"
+                  className="group relative overflow-hidden rounded-xl transition-all duration-500 hover:transform hover:scale-105 hover:shadow-2xl hover:shadow-black/20"
                 >
-                  <div className="relative overflow-hidden rounded-lg shadow-lg">
+                  <div className="relative overflow-hidden rounded-xl shadow-lg">
                     <img 
                       src={image.src}
                       alt={image.alt}
                       className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                     />
+                    
+                    {/* Overlay with title */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
+                      <div className="absolute bottom-0 left-0 right-0 p-4">
+                        <h3 className="text-white font-semibold text-lg">
+                          {image.alt}
+                        </h3>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}

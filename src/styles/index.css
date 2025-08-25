@@ -238,3 +238,27 @@ body {
 .animate-fade-in-up {
   animation: fade-in-up 0.6s ease-out forwards;
 }
+
+/* Fade in up animation for sectors section */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered animation delays for grid items */
+.animate-stagger-1 { animation-delay: 0.1s; }
+.animate-stagger-2 { animation-delay: 0.2s; }
+.animate-stagger-3 { animation-delay: 0.3s; }
+.animate-stagger-4 { animation-delay: 0.4s; }
+.animate-stagger-5 { animation-delay: 0.5s; }
+.animate-stagger-6 { animation-delay: 0.6s; }
+.animate-stagger-7 { animation-delay: 0.7s; }
+.animate-stagger-8 { animation-delay: 0.8s; }
+.animate-stagger-9 { animation-delay: 0.9s; }
+.animate-stagger-10 { animation-delay: 1s; }

@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from '@/components/common/Header';
 import CompanyHeaderSection from '@/components/sections/CompanyHeaderSection';
+import CosmeticsSectorsSection from '@/components/sections/CosmeticsSectorsSection';
 import CosmeticsGridSection from '@/components/sections/CosmeticsGridSection';
 import Footer from '@/components/sections/Footer';
 
@@ -22,12 +23,15 @@ const HollywoodCosmeticsPage = () => {
               </div>
               <div className="w-full lg:w-1/2">
                 <p className="text-xl text-gray-300 text-left lg:text-right">
-                Manufactures and imports international brands such as L’Oréal, MAC, Maybelline, and Max Factor. Distributes through wholesale networks, pharmacies, and retail stores.
+                  Manufactures and imports international brands such as L'Oréal, MAC, Maybelline, and Max Factor. 
+                  Our comprehensive business spans 7 key sectors including production, R&D, packaging, marketing, 
+                  distribution, consultancy, and partnerships. Distributes through wholesale networks, pharmacies, and retail stores.
                 </p>
               </div>
             </div>
           </div>
         </section>
+        <CosmeticsSectorsSection />
         <CosmeticsGridSection />
         <Footer />
       </main>
